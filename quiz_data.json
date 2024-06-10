@@ -1,0 +1,48 @@
+[
+    {
+        "question": "Mengapa minyak dan air tidak bisa menyatu menjadi 1 larutan??",
+        "options": ["Karena minyak berbeda wujudnya dengan air", "Karena minyak lebih kental dari air", "Karena minyak lebih licin dari air", "Karena minyak berbeda massa jenisnya dengan air"],
+        "correct_answer": "Karena minyak berbeda massa jenisnya dengan air"
+    },
+    {
+        "question": "Yang menghasilkan tekanan paling besar pada penerapan dalam kehidupan sehari-hari adalah...",
+        "options": ["Pisau yang tajam dibandingkan pisau yang tumpul", "Kaki bebek dibandingkan kaki ayam", "Kotak televisi dan kotak sepatu", "Pengguna sepatu sneaker dibanding sepatu high heels"],
+        "correct_answer": "Pisau yang tajam dibandingkan pisau yang tumpul"
+    },
+    {
+        "question": "Berikut yang bukan penerapan dari hukum Pascal adalah...",
+        "options": ["Kapal selam", "Dongkrak Hidrolik", "Rem hidrolik", "Alat pengukur tekanan darah"],
+        "correct_answer": "Kapal selam"
+    },
+    {
+        "question": "Sebuah kolam dalamnya $5,2$ meter berisi penuh air ($ρ$ = $1$ $g/cm^3$ dan gravitasi $10$ $m/s^2$). Berapakah tekanan hidrostatis pada suatu titik yang berada $40$ $cm$ di atas dasar kolam?",
+        "options": ["3,5 kPa", "4,0 kPa", "48 kPa", "52 kPa"],
+        "correct_answer": "Puncak Jaya"
+    },
+    {
+        "question": "Sebuah balok pada saat di udara memiliki berat $50$ $N$. Ketika ditimbang dalam air beratnya menjadi $30$ $N$. Besar gaya ke atas yang dialami balok tersebut adalah...",
+        "options": ["10 N", "20 N", "30 N", "40 N"],
+        "correct_answer": "20 N"
+    },
+    {
+        "question": "Mobil yang beratnya $4.500$ $N$ diletakkan di atas piston besar yang mempunyai luas $900$ $cm^2$. Gaya minimal yang harus diberikan pada piston kecil yang memiliki luas $75$ $cm^2$ agar mobil dapat terangkat adalah ...",
+        "options": ["425 N", "375 N", "550 N", "624 N"],
+        "correct_answer": "375 N"
+    },{
+        "question": "Tekanan hidrostatis pada saat ikan berenang di akuarium, dan saat ikan berenang di lautan, pada kedalaman yang sama, besarnya...",
+        "options": ["Lebih besar tekanan hidrostatis saat ikan berenang di lautan", "Lebih besar tekanan hidrostatis saat ikan berenang di akuarium", "Tekanan hidrostatis saat ikan berenang di akuarium dan lautan besarnya tidak sama", "Tekanan hidrostatis saat ikan berenang di akuarium dan lautan besarnya sama"],
+        "correct_answer": "Tekanan hidrostatis saat ikan berenang di akuarium dan lautan besarnya sama"
+    },{
+        "question": "Sebuah jarum yang panjangnya $5$ $cm$ diletakkan berlahan-lahan di atas permukaan air yang mempunyai tegangan permukaan sebesar $7,3$ x $10^{-2}$ $N/m$. Berat jarum maksimum agar tidak tenggelam adalah ...",
+        "options": ["$7,3$ x $10^{-3}$ N", "$3,65$ x $10^{-3}$ N", "$3,65$ x $10^{-2}$ N", "$7,3$ x $10^{-3}$ N"],
+        "correct_answer": "$3,65$ x $10^{-3}$ N"
+    },{
+        "question": "ikan gabus, ikan koi dan ikan mas terletak masing-masing berada pada kedalaman 20 cm, 50 cm, dan 80 cm dari permukaan sungai. urutan besarnya tekanan dari yang paling besar ke kecil adalah...",
+        "options": ["ikan mas, ikan koi, ikan gabus", "ikan gabus, ikan koi, ikan mas", "ikan koi, ikan gabus, ikan mas", "ikan mas, ikan gabus, ikan koi"],
+        "correct_answer": "ikan mas, ikan koi, ikan gabus"
+    },{
+        "question": "Jika tekanan atmosfer 105 Pa, maka tekanan mutlak pada kedalaman 20 m dari permukaan air adalah...",
+        "options": ["$0,2$ x $10^{-5}$", "$3,0$ x $10^5$", "$5,0$ x $10^5$", "$0,5$ x $10^5$"],
+        "correct_answer": "$3,0$ x $10^5$"
+    }
+]
