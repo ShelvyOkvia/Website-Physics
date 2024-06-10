@@ -69,7 +69,7 @@ class MultiApp:
         with st.sidebar:
             st.image('Logo.png')
             st.info('**Yo students! Start here ↓**', icon='👋🏾')
-            with st.expander("💡**How to use**", expanded=True):
+            with st.expander("💡**How to use**", expanded=False):
                 st.info(
                     """
                         1. Bacalah "Capaian Pembelajaran" terlebih dahulu.
