@@ -72,7 +72,9 @@ class MultiApp:
             with st.expander("💡**How to use**", expanded=False):
                 st.info(
                     """
-                        1. Bacalah "Capaian Pembelajaran" terlebih dahulu.
+                        1. Klik titik tiga di kanan atas, kemudian pilih settings, pada menu *Choose app theme, colors and fonts* pilih bagian dark.
+                        2. Setelah selesai bisa menunggu beberapa detik, dan tulisan dapat terlihat berwarna putih.
+                        2. Setelah selesai, Bacalah "Capaian Pembelajaran" terlebih dahulu.
                         2. Setelah selesai klik "Pilihan Pembelajaran" yang sesuai dengan gaya belajarmu
                         3. Silahkan klik latihan soal jika kalian sudah selesai mempelajari fluida statis 
                         4. Jika kalian butuh bantuan mengenai materi fluida statis, silahkan klik menu "Chatbot".
