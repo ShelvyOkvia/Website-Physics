@@ -19,11 +19,11 @@ def app():
 
     # Fungsi untuk mendapatkan petunjuk dari chatbot
     def get_hint(question):
-        prompt = f"Saya kesulitan menjawab pertanyaan berikut: '{question}'. Bisakah Anda memberi saya beberapa petunjuk?"
+        prompt = f"Saya kesulitan menjawab pertanyaan berikut: '{question}'. Bisakah Anda memberi saya satu kalimat petunjuk?"
         response = openai.Completion.create(
             engine="gpt-3.5-turbo-instruct",
             prompt=prompt,
-            max_tokens=150
+            max_tokens=100
         )
         hint = response.choices[0].text.strip()
         return hint
