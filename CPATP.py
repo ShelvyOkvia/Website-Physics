@@ -6,7 +6,7 @@ import streamlit.components.v1 as components
 def app():
     st.title(':green[FLUIDA STATIS KELAS 11 - FASE F]')
     st.header(':orange[Peta Konsep Materi]')
-    st.markdown("<img src='https://unjac-my.sharepoint.com/personal/shelvyokvia_1302620035_mhs_unj_ac_id/Documents/120/Website%20Chatbot/image/Concept%20map.png?Web=1' width='600' style='display: block; margin: 0 auto;'>", unsafe_allow_html=True)
+    st.image('gambar/garfik.png')
     
     st.markdown('###')
     st.write('---')
