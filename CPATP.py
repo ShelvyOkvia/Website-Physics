@@ -6,9 +6,7 @@ import streamlit.components.v1 as components
 def app():
     st.title(':green[FLUIDA STATIS KELAS 11 - FASE F]')
     st.header(':orange[Peta Konsep Materi]')
-    col1, col2, col3 = st.columns(3)
-    with col3:
-        st.image('gambar/garfik.png')
+    st.image('gambar/garfik.png', use_column_width=True)
     
     st.markdown('###')
     st.write('---')
