@@ -6,7 +6,9 @@ import streamlit.components.v1 as components
 def app():
     st.title(':green[FLUIDA STATIS KELAS 11 - FASE F]')
     st.header(':orange[Peta Konsep Materi]')
-    st.image('gambar/garfik.png')
+    col1, col2, col3 = st.columns(3)
+    with col3:
+        st.image('gambar/garfik.png')
     
     st.markdown('###')
     st.write('---')
@@ -25,8 +27,8 @@ def app():
             {
                 "Elemen": [("Pemahaman Fisika"), ("Keterampilan Proses")],
                 "Capaian Pembelajaran": [
-                    '- Peserta didik mampu menerapkan konsep dan prinsip vektor, kinematika dan dinamika gerak, fluida, gejala gelombang bunyi dan gelombang cahaya dalam menyelesaikan masalah, serta menerapkan prinsip dan konsep kalor dan termodinamika, dengan berbagai perubahannya dalam mesin kalor', 
-                    'Kabel  Serat optik adalah suatu serat transparan yang dipakai untuk menghantarkan cahaya, misalnya laser. Dengan cara menggunakan kabel serat optik, data yang sedang dikirim akan sampai lebih cepat. Karena kecepatan data tersebut sama dengan kecepatan cahaya, yaitu 300 ribu km/jam.']
+                    'Peserta didik mampu menerapkan konsep dan prinsip vektor, kinematika dan dinamika gerak, fluida, gejala gelombang bunyi dan gelombang cahaya dalam menyelesaikan masalah, serta menerapkan prinsip dan konsep kalor dan termodinamika, dengan berbagai perubahannya dalam mesin kalor', 
+                    'Mengamati, mempertanyakan, dan memprediksi; merencanakan dan melakukan penyelidikan; memproses dan menganalisis data serta informasi; mencipta, mengevaluasi, dan melakukan refleksi, serta mengomunikasikan hasil penyelidikan.']
             }
         )
         st.markdown(df.style.hide(axis='index').to_html(), unsafe_allow_html=True)
@@ -37,9 +39,26 @@ def app():
     st.markdown('''
         1. Melalui kegiatan membaca dan menyimak video peserta didik mampu menerapkan konsep fluida statis dengan benar.
         2. Memahami pentingnya masalah fluida statis dalam lingkungan sekitar.
-        3.	Mengidentifikasi berbagai masalah fluida statis yang ada di lingkungan sekitar.
-        4.	Mengembangkan kemampuan untuk mencari solusi terhadap masalah fluida statis dengan problem based learning.
+        3. Mengidentifikasi berbagai masalah fluida statis yang ada di lingkungan sekitar.
+        4. Mengembangkan kemampuan untuk mencari solusi terhadap masalah fluida statis dengan problem based learning.
     ''')
+
+    st.markdown('###')
+    st.write('---')
+    st.header(':orange[Alur Pembelajaran Problem Based Learning]')
+    df1 = pd.DataFrame(
+        {
+            "Fase": [("Ke-1"), ("Ke-2"), ("Ke-3"), ("Ke-4"), ("Ke-5")],
+            "Tahapan": [("Mengorientasikan Masalah"), ("Menorganisasikan Kegiatan Pembelajaran"), ("Membimbing Penyelidikan Mandiri/kelompok"), ("Mengembangkan dan Menyajikan Hasil Karya"), ("Menganalisis dan Mengevaluasi proses Pemecahan Masalah")],
+            "Aktivitas": [
+                'Memberikan tujuan pembelajaran dan video untuk siswa agar terlibat pada aktivitas pemecahan masalah.', 
+                'Memberikan siswa materi fluida statis yang dapat membantu pemecahan masalah pada tahap selanjutnya.',
+                'Memberikan studi kasus beserta panduan cara mengerjakannya yang dapat di akses siswa untuk mengerjakan pemecahan masalah dari studi kasus yang ada.',
+                'Memberikan link canva agar siswa dapat mengembangkan dan menyajikan hasil karya mereka dari studi kasus sebelumnya.',
+                'Menganalisis dan mengevaluasi proses pemecahan masalah dilakukan dengan presentasi di depan teman-teman yang berbeda studi kasus agar mengetahui apa yang harus diperbaiki dan ditambahkan.']
+        }
+    )
+    st.markdown(df1.style.hide(axis='index').to_html(), unsafe_allow_html=True)
 
 
 
