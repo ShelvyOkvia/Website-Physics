@@ -368,7 +368,7 @@ def app():
         st.title(':orange[B. URAIAN MATERI]')
         st.write('Pada waktu di sekolah tingkat pertama, telah dikenalkan ada tiga jenis wujud zat, yaitu: zat padat, zat cair dan gas. Fluida adalah zat yang dapat mengalir dan memberikan sedikit hambatan terhadap perubahan bentuk ketika ditekan. Fluida secara umum dibagi menjadi dua macam, yaitu fluida tak bergerak dan fluida bergerak. Pada website ini kita akan fokus pada pembahasan fluida yang tidak bergerak atau fluida statis.')
         st.write('Fluida statis berasal dari dua kata, yaitu fluida dan statis. Fluida adalah bahan berbentuk zat cair atau gas yang dapat mengalir, sedangkan statis adalah keadaan yang menunjukkan tidak adanya gerakan, dalam hal ini diam. Sehingga, fluida statis adalah ilmu fisika yang mempelajari sifat-sifat benda cair dan gas yang berada dalam kondisi diam atau tidak bergerak.')
-        st.image('image/Picture24.png', caption='Gambar 1. Penggunaan konsep fluida dalam kehidupan.')
+        st.image('image/Picture24.png', caption='Gambar 1. Penggunaan konsep fluida dalam kehidupan. (Sumber: https://palembang.tribunnews.com/2020/01/31/khawatir-corona-6000-penumpang-kapal-pesiar-tak-diizinkan-turun-ke-darat-2-diantaranya-warga-cina)')
         
         # PBL 1 Mengorientasikan Masalah
         st.info('Langkah PBL ⏩ (1. Mengorientasikan Masalah)')
@@ -388,7 +388,7 @@ def app():
         st.write('Tekanan didefinisikan sebagai gaya yang bekerja tegak lurus pada suatu bidang dibagi dengan luas bidang itu. Dan secara matematis dirumuskan sebagai berikut:')
         left_co, cent_co,last_co = st.columns(3)
         with last_co:
-            st.image('image/Picture1.png', caption='Gambar 2. Ilustrasi Tekanan')
+            st.image('image/Picture1.png', caption='Gambar 2. Ilustrasi Tekanan. (Sumber: https://www.ruangguru.com/blog/tekanan-zat-padat)')
         with left_co:
             st.latex(r'P = \frac{F}{A}...............(1)')
         st.write('Keterangan:')
@@ -408,7 +408,7 @@ def app():
 
         #Subheader 2
         st.header(':blue[2. TEKANAN HIDROSTATIS]')
-        st.image('image/waduk.jpg', caption='Gambar 3. Waduk')
+        st.image('image/waduk.jpg', caption='Gambar 3. Waduk. (Sumber: https://taniku.kulonprogokab.go.id/agrowisata/index/4)')
         st.write('Pernahkah kamu bepergian ke suatu waduk atau bendungan? Jika diperhatikan dari atas terlihat bahwa bagian bawah dinding bendungan lebih lebar daripada bagian atasnya. Bisakah kamu menganalisis terkait dengan fenomena tersebut?')
         st.write('***Tekanan hidrostatis*** adalah tekanan yang diberikan oleh air ke semua arah pada titik ukur manapun akibat adanya gaya gravitasi. Tekanan hidrostatis akan meningkat seiring dengan bertambahnya kedalaman diukur dari permukaan air.')
         st.write('Akibat gaya gravitasi, berat partikel air akan menekan partikel dibawahnya, dan begitu pula partikel-partikel air di bawahnya akan saling menekan hingga ke dasar air sehingga tekanan dibawah akan lebih besar dari tekanan diatas. Jadi, semakin dalam kita menyelam dari permukaan air, maka akan semakin banyak volume air yang ada di atas kita dengan permukaan air sehingga tekanan yang diberikan air pada tubuh kita (tekanan hidrostatis) akan semakin besar. Secara umum tekanan hidrostatis dapat dirumuskan sebagai berikut:')
@@ -421,7 +421,7 @@ def app():
         st.write('Berikut fenomena sederhana mengenai tekanan hidrostatis yang terjadi pada wadah yang berisi air.')
         left1, cent1,last1 = st.columns(3)
         with cent1:
-            st.image('image/hidrostatis.jpg', caption='Gambar 4. Tekanan Hidrostatis pada Wadah')
+            st.image('image/hidrostatis.jpg', caption='Gambar 4. Tekanan Hidrostatis pada Wadah. (Sumber: https://blog.maukuliah.id/hidrostatis-adalah)')
         st.write('Jadi semakin besar jarak titik ukur dengan permukaan air, maka akan semakin besar tekaunan hidrostatis pada titik tersebut. Fenomena ini dapat dilihat pada gambar diatas dimana semakin besar ketinggian air, maka akan semakin besar pula tekanan hidrostatis di dasar bejana. Akibatnya, air akan muncrat lebih jauh pada bejana sebelah kanan karena tekanan yang lebih tinggi dibandingkan bejana di sebelah kiri.')
         st.write('Penjumlahan antara tekanan hidrostatis dan tekanan udara luar akan menghasilkan besaran baru yang disebut tekanan mutlak. Secara matematis, dirumuskan sebagai berikut:')
         st.latex(r'P_T=P_0+{\rho}{g}{h}...............(3)')
@@ -438,7 +438,7 @@ def app():
             st.write(':grey[Seekor ikan berada pada kedalaman 15 meter di bawah permukaan air.]')
             left2, cent2,last2 = st.columns(3)
             with cent2:
-                st.image('image/Picture25.png', caption='Gambar 5. Ikan dibawah permukaan air')
+                st.image('image/Picture25.png', caption='Gambar 5. Ikan dibawah permukaan air. (Sumber: https://roboguru.ruangguru.com/question/seekor-ikan-berada-pada-kedalaman-17-meter-di-bawah-permukaan-air-jika_QU-48J7ON32)')
             st.write(':grey[Jika massa jenis air $1000$ $kg/m^3$, percepatan gravitasi bumi $10$ $m/s^2$ dan tekanan udara luar $10$ $N/m$, tentukan:]')
             st.markdown('''
                 :grey[1. Tekanan hidrostatis yang dialami ikan.] 
@@ -458,7 +458,7 @@ def app():
         st.latex(r'{\rho_1}{h_1} = {\rho_2}{h_2}...............(4)')
         left3, cent3, last3 = st.columns(3)
         with cent3:
-            st.image('image/bejana.jpg', caption='Gambar 6. Bejana Berhubungan')
+            st.image('image/bejana.jpg', caption='Gambar 6. Bejana Berhubungan. (Sumber: https://www.kompas.com/tag/fluida-statik-adalah)')
         st.write('Keterangan:')
         st.write('$\\rho_1$ = Massa Jenis Zat Cair 1 $kg/m^3$')
         st.write('$\\rho_2$ = Massa Jenis Zat Cair 2 $kg/m^3$')
@@ -475,14 +475,14 @@ def app():
         st.header(':blue[4. HUKUM PASCAL]')
         left4, cent4, last4 = st.columns(3)
         with cent4:
-            st.image('image/mobil.jpg', caption='Gambar 7. Tempat Pencucian Mobil')
+            st.image('image/mobil.jpg', caption='Gambar 7. Tempat Pencucian Mobil. (Sumber: https://cucimobilmotor.com/modal-usaha-cuci-mobil-hidrolik/)')
         st.write('Pernahkah kalian pergi ke tempat pencucuian mobil? Ketika kalian pergi ke tempat pencucian mobil kalian akan melihat mobil dapat terangkat hanya dengan alat tanpa bantuan tangan manusia. Kalau kita perhatikan sepertinya unik sekali dengan alat yang kecil mampu mengangkat mobil yang ukurannya jauh lebih besar. Berdasarkan ilustrasi tersebut:')
         st.write('Mengapa mobil yang memiliki massa lebih besar dapat diangkat oleh benda seperti mesin hidrolik? Peristiwa ini merupakan contoh penerapan hukum pascal dalam kehidupan sehari-hari. Lalu, bagaimana prosesnya dapat terjadi?')
         st.write('Prinsip Pascal mengatakan bahwa tekanan yang diberikan kepada zat cair dalam ruang tertutup diteruskan sama besar ke segala arah, Sebagai contoh sederhana aplikasi dari hukum Pascal adalah dongkrak hidrolik.')
         st.write('Hukum Pascal dicetuskan oleh seorang ilmuwan asal Prancis, yaitu Blaise Pascal. Dalam hukumnya, Pascal menyatakan bahwa *"Tekanan yang diberikan pada suatu fluida dalam ruang tertutup akan diteruskan ke segala arah dengan sama besar"*.')
         left5, cent5, last5 = st.columns(3)
         with cent5:
-            st.image('image/Picture26.png', caption='Gambar 8. Prinsip Hukum Pascal')
+            st.image('image/Picture26.png', caption='Gambar 8. Prinsip Hukum Pascal. (Sumber: https://kumparan.com/berita-update/hukum-pascal-dan-manfaatnya-1vGurAqtAyA)')
         st.write('Perhatikan gambar mekanisme hidrolik diatas. Karena cairan tidak dapat ditambahkan ataupun keluar dari sistem tertutup, maka volume cairan yang terdorong di sebelah kiri akan mendorong piston (silinder pejal) di sebelah kanan ke arah atas. Dengan menggunakan prinsip Pascal, berlaku hubungan, secara matematis:')
         st.latex(r'\frac{F_1}{A_1} = \frac{F_2}{A_2}...............(5)')
         st.write('Keterangan:')
@@ -504,7 +504,7 @@ def app():
         st.write('Hukum Archimedes adalah hukum tentang prinsip pengapungan pada benda cair yang ditemukan oleh Archimedes, seorang ilmuwan Yunani. Hukum ini menyatakan bahwa ‘sebuah benda yang dicelupkan sebagian atau seluruhnya ke dalam zat cair akan mengalami gaya ke atas yang besarnya sama dengan berat zat cair yang dipindahkan oleh benda tersebut')
         left6, cent6, last6 = st.columns(3)
         with cent6:        
-            st.image('image/Picture27.png', caption='Gambar 9. Prinsip Hukum Archimedes')
+            st.image('image/Picture27.png', caption='Gambar 9. Prinsip Hukum Archimedes. (Sumber: https://mediaindonesia.com/humaniora/653072/hukum-archimedes)')
         st.write('Benda yang tenggelam dalam fluida terlihat beratnya lebih rendah dibandingkan diluar fluida. Hal ini disebabkan benda di dalam fluida memiliki gaya angkat atau gaya apung yaitu tekanan dalam fluida naik sebanding dengan kedalaman. Tekanan keatas pada permukaan bawah benda lebih besar daripada tekanan ke bawah pada bagian atas permukaan benda. Gaya apung ini merupakan selisih dari gaya berat benda di udara dengan gaya berat benda di dalam fluida')
         st.latex(r'F_A = W_u - W_f...............(6)')
         st.write('Keterangan:')
@@ -525,7 +525,7 @@ def app():
         st.write('Jika benda dicelupkan ke dalam fluida, benda muncul sebagian ke permukaan air, karena berat benda lebih kecil dari gaya apung $(Fa< W)$. Ini adalah konsep mengapung. Dari konsep tersebut, dapat dirumuskan hubungan antara massa jenis benda dengan massa jenis fluida:')
         left7, cent7, last7 = st.columns(3)
         with cent7: 
-            st.image('image/Picture28.png', caption='Gambar 10. Benda Terapung')
+            st.image('image/Picture28.png', caption='Gambar 10. Benda Terapung. (Sumber: https://mediaindonesia.com/humaniora/653072/hukum-archimedes)')
         st.latex(r'\rho_b = \frac{V_{bf}}{V_b} \rho_f')
         st.write('Keterangan:')
         st.write(r'$$\\rho_b = \text{Massa jenis benda} \,(kg/m^3)$$')
@@ -537,13 +537,13 @@ def app():
         st.write('Jika benda dicelupkan seluruhnya kedalam fluida (air), maka gaya apung $(F_a)$ sama dengan berat benda $W$ $(F_a= W)$.')
         left8, cent8, last8 = st.columns(3)
         with cent8:
-            st.image('image/Picture29.png', caption ='Gambar 11. Benda Melayang')
+            st.image('image/Picture29.png', caption ='Gambar 11. Benda Melayang. (Sumber: https://mediaindonesia.com/humaniora/653072/hukum-archimedes)')
         # Sub Tenggelam
         st.subheader(':red[c. Tenggelam]')
         st.write('Jika benda dicelupkan seluruhnya kedalam fluida (air), maka gaya apung $(Fa)$ lebih kecil dari berat benda $W$ $(Fa < W)$. Sehingga benda bergerak kebawah menuju dasar wadah air. Ini adalah konsep tenggelam.')
         left9, cent9, last9 = st.columns(3)
         with cent9:
-            st.image('image/Picture30.png', caption='Gambar 12. Benda Tenggelam')
+            st.image('image/Picture30.png', caption='Gambar 12. Benda Tenggelam. (Sumber: https://mediaindonesia.com/humaniora/653072/hukum-archimedes)')
         # Sub Penerapan Hukum Archimedes:
         st.subheader(':red[Penerapan Hukum Archimedes:]', divider='red')
         st.write(':violet[**Hidrometer**] : Digunakan untuk mengukur massa jenis fluida.')
@@ -570,21 +570,21 @@ def app():
             st.write('Ketika kalian bangun dari tidur, udara sangat menyenangkan jika kalian pergi ke luar rumah untuk menghirup udara segar. Suasana di pagi hari seringkali diselimuti oleh embun, sehingga suhu di pagi hari akan terasa dingin. Pernahkah kalian mengamati tetesan embun yang terdapat pada permukaan daun atau rumput? Lalu mengapa tetesan-tetesan itu berbentuk bola?')
             left10, cent10, last10 = st.columns(3)
             with cent10:
-                st.image('image/tes.jpg', caption='Gambar 13. Peristiwa Embun')
+                st.image('image/tes.jpg', caption='Gambar 13. Peristiwa Embun. (Sumber: https://desaputat.gunungkidulkab.go.id/first/artikel/2212-RENUNGAN---EMBUN-PAGI--2-)')
         st.write('Secara Fisika, fenomena ini dapat terjadi karena adanya tegangan permukaan. Lalu, apa yang dimaksud oleh tegangan permukaan? Tegangan permukaan adalah suatu kecenderungan permukaan zat cair untuk menegang sehingga permukaannya seperti ditutupi oleh suatu lapisan kulit tipis. Penyebab adanya tegangan permukaan adalah karena adanya kohesi dibawah zat cair yang lebih besar dari pada kohesi di permukaan zat cair, sehingga permukaan air akan cenderung mengerut dan membentuk luas permukaan sekecil mungkin. Hal tersebut dapat membuktikan bahwa titik-titik embun yang menempel di atas rumput berbentuk seperti bola karena luas permukaan terkecil adalah bangun yang berbentuk bola.')
-        st.image('image/Picture31.png', caption='Gambar 14. Peristiwa tegangan permukaan')
+        st.image('image/Picture31.png', caption='Gambar 14. Peristiwa tegangan permukaan. (Sumber: https://www.youtube.com/watch?v=jnDVbIjZ0QM)')
         st.write('Pernahkah kamu melihat sebuah silet terapung diatas air? Atau kamu pasti pernah melihat ada nyamuk atau serangga lain dapat berdiri diatas air. Fenomena ini erat kaitannya dengan penjelasan tentang tegangan permukaan. Lalu, bisakah kamu menganalisis mengapa fenomena tersebut dapat terjadi?')
         st.write('Tegangan permukaan terjadi akibat gaya kohesi (gaya tarik-menarik antar partikel-partikel sejenis) pada permukaan fluida tersebut.')
         left11, cent11, last11 = st.columns(3)
         with cent11:
-            st.image('image/Picture32.png', caption='Gambar 14. Gaya Kohesi')
+            st.image('image/Picture32.png', caption='Gambar 15. Gaya Kohesi. (Sumber: http://chemist-try.blogspot.com/2012/10/tegangan-permukaan_26.html)')
         st.write('Pada gambar diatas, titik A berada di permukaan, titik B berada di dalam fluida. Partikel yang berada di titik B mendapat gaya kohesi dari partikel-partikel lain di sekelilingnya sehingga resultan yang dihasilkan dari semua gaya kohesi ini nol. Sedangkan partikel yang berada di titik A tidak mendapat gaya kohesi dari partikel di atasnya sehingga resultan yang dihasilkan dari gaya-gaya kohesi berarah ke bawah. Tarikan pada permukaan fluida ini membentuk semacam kulit penutup yang tipis. Seekor nyamuk dapat berjalan di atas permukaan air karena berat nyamuk dapat diatasi oleh lapisan kulit tipis ini.')
         st.write('Tegangan permukaan didefinisikan sebagai perbandingan antara gaya tegangan permukaan dengan panjang permukaan dimana gaya itu bekerja.')
         left12, last12 = st.columns(2)
         with left12:
             st.write('Gaya tegangan permukaan yang dialami oleh kawat yang dicelupkan kedalam air sabun. Kawat yang lurus posisi horisontal (bawah), cenderung bergerak keatas karena pengaruh tarikan gaya permukaan air sabun. Larutan sabun mempunyai dua permukaan, sehingga gaya tegangan permukaan bekerja sepanjang $2L=d$, tegangan permukaan $(\gamma)$ didefinisikan sebagai perbandingan antara gaya tegangan permukaan $(F)$ dan panjang permukaan $(d)$ dimana gaya itu bekerja')
         with last12:    
-            st.image('image/Picture33.png', caption='Gambar 15. Gaya Tegangan Permukaan')
+            st.image('image/Picture33.png', caption='Gambar 16. Gaya Tegangan Permukaan. (Sumber: https://repositori.kemdikbud.go.id/22209/1/XI_Fisika_KD-3.3-_Final.pdf)')
         st.write('Sehingga secara matematis, dapat dirumuskan sebagai berikut:')
         st.latex(r'\gamma = \frac{F}{d} =\frac{F}{2L}...............(9)')
         st.write('Keterangan:')
@@ -615,13 +615,13 @@ def app():
         st.header(':blue[7. KAPILARITAS]')
         left13, cent13, last13 = st.columns(3)
         with cent13:
-            st.image('image/Picture34.png', caption = 'Gambar 16. Peristiwa minuman tumpah')
+            st.image('image/Picture34.png', caption = 'Gambar 17. Peristiwa minuman tumpah. (Sumber: https://ibnujafar86.wordpress.com/2011/05/13/suamiku-bukan-lelaki-yang-sempurna/kopi-tumpah/?like=1)')
         st.write('Pernahkah kalian menumpahkan minuman? Untuk mengelap tumpahan minuman tersebut secara spontan kalian akan bergerak mengambil tisu atau kain untuk mengeringkannya. Kita memilih tisu atau kain lap karena mereka memiliki daya serap atau daya kapilaritas tinggi.')
         st.write('Kapilaritas adalah peristiwa naik atau turunnya zat cair pada pembuluh atau celah kecil atau pori-pori kecil. Tisu atau kain lap memiliki celah atau pori- pori kecil. Lalu, bagaimana proses kapilaritas tersebut dapat terjadi?')
         st.write('Kapilaritas adalah peristiwa naik atau turunnya permukaan zat cair melalui perantara, seperti kain, dinding, pipa kapiler, dan lain sabagainya. Namun tidak semua zat cair mengalami gejala kapilaritas yang sama. Misalnya pada air dan raksa.')
         left14, cent14, last14 = st.columns(3)
         with cent14:
-            st.image('image/Picture35.png', caption='Gambar 17. Peristiwa kapilaritas pada pipa kapiler')
+            st.image('image/Picture35.png', caption='Gambar 18. Peristiwa kapilaritas pada pipa kapiler. (Sumber: https://eandroidfisika.wordpress.com/kapilaritas/)')
         st.write('Pada zat cair berupa air. permukaan zat cair dapat membasahi dinding. Sedangkan pada zat cair berupa raksa, tidak dapat membasahi dinding, raksa malah akan turun. Air membasahi dinding karena gaya kohesi antar partikel air lebih kecil dari gaya adhesi antara partikel air dan partikel dinding. Gaya tarik- menarik antar partikel sejenis disebut gaya kohesi. Sedangkan gaya tarik menarik antar partikel berbeda jenis disebut gaya adhesi.')
         st.write('Jika sebuah pipa yang terbuka kedua ujungnya ditegakkan dengan sebuah ujungnya berada di atas permukaan zat cair sedangkan ujung yang lain di bawah permukaan, maka permukaan zat cair dalam pipa tidak sama dengan tinggi permukaan zat cair di luar pipa.')
         st.write('Bila zat cair membasahi dinding (meniskus cekung), maka zat cair dalam pipa lebih tinggi daripada diluar pipa, sebaliknya bila zat cair tidak membasahi dinding (meniskus cembung), maka zat cair dalam pipa lebih rendah daripada di luar pipa. Peristiwa naik atau turunnya permukaan zat cair dalam pipa kapiler (pipa sempit) dinamakan gejala kapiler atau kapilaritas. Kenaikan dan penurunan permukaan zat cair di dalam pipa kapiler bergantung pada kohesi dan adhesi.')
@@ -649,23 +649,23 @@ def app():
         st.subheader(':red[SUDUT KONTAK]')
         left15, cent15, last15 = st.columns(3)
         with cent15:
-            st.image('image/Picture36.png', caption='Gambar 18. Sudut Kontak')
+            st.image('image/Picture36.png', caption='Gambar 19. Sudut Kontak. (Sumber: http://www.fisikasekolah.com/2017/01/konsep-tegangan-permukaan-dan.html)')
         st.write('Jika arah permukaan zat cair dalam wadah diperpanjang dengan garis lurus maka akan kita dapatkan sudut antara perpanjangan permukaan zat cair dangan arah vertikal wadah, sudut ini disebut dengan sudut kontak.')
         st.write('Zat dalam wujud cair, partikel-partikelnya dapat berpindah-pindah ke segala arah, tetapi sulit meninggalkan zat cair itu. Partikel-partikel tersebut saling tarik- menarik. Gaya tarik-menarik inilah yang menyebabkan partikel-partikel tersebut tidak bercerai-berai. Gaya tarik menarik antara partikel-partikel dari zat yang sama. disebut kohesi, sedangkan gaya tarik menarik antara partikel-partikel dari zat yang berbeda disebut adhesi. Kohesi dan adhesi uni mempunyai peran penting pada pembentukan permukaan zat cair.')
         st.write(':violet[**Kita Tinjau Dua Kasus Berikut**]')
         left16, cent16, last16 = st.columns(3)
         with cent16:
-            st.image('image/Picture37.png', caption='19. Air dalam tabung kaca')
+            st.image('image/Picture37.png', caption='20. Air dalam tabung kaca. (Sumber: https://www.mikirbae.com/2017/11/pengertian-dan-sudut-kontak-pada.html)')
         st.write('Air dimasukkan ke dalam tabung kaca. Permukaan air di dalam tabung melengkung ke atas pada bagian yang menempel di dinding kaca. Pada kasus ini gaya kohesi (F kohesi) lebih kecil dari gaya adhesi (F adhesi). Resultan kedua gaya (F resultan) ini mengarah keluar. Supaya tercapai keseimbangan, maka permukaan air yang menempel di dinding kaca harus tegak lurus pada gaya $F$ ini sehingga air yang menempel pada dinding kaca melengkung ke atas. Kelengkungan zat cair di dalam tabung dinamakan meniskus sehingga permukaan air di dalam tabung dinamakan meniskus cekung. Karena adanya meniskus cekung, maka air membasahi dinding kaca.')
         st.write('Jika pada lengkungan air ke atas ditarik garis lurus, maka garis ini akan membentuk sudut $\\theta$ terhadap dinding vertikal. Sudut $\\theta$ ini dinamakan sudut kontak. Sudut kontak air adalah lancip $(0<90°)$')
         left17, cent17, last17 = st.columns(3)
         with cent17:
-            st.image('image/Picture38.png', caption='Gambar 20. Raksa dalam tabung kaca')
+            st.image('image/Picture38.png', caption='Gambar 21. Raksa dalam tabung kaca. (Sumber: https://rumushitung.com/2013/10/01/sudut-kontak-dan-kapilaritas/)')
         st.write('Raksa dimasukkan ke dalam tabung kaca. Permukaan raksa dalam tabung melengkung ke bawah pada bagian yang menempel di dinding kaca. Pada kasus ini. gaya kohesi (F kohesi) lebih besar dari gaya adhesi (F adhesi). Resultan kedua gaya ini (Fresultan) mengarah ke dalam. Supaya tercapai keseimbangan, maka permukaan raksa yang menempel di dinding kaca harus tegak lurus terhadap gaya F sehingga raksa yang menempel pada dinding kaca melengkung ke bawah. Permukaan raksa pada tabung dinamakan meniskus cembung. Karena meniskus cembung ini raksa tidak membasahi dinding kaca.')
         st.write('Jika pada lengkungan raksa ke bawah ditarik garis lurus maka garis ini akan membentuk sudut $\\theta$ terhadap dinding vertikal. Sudut kontak raksa adalah tumpul $(90°<0<180°)$.')
         left18, cent18, last18 = st.columns(3)
         with cent18:
-            st.image('image/Picture39.png', caption= 'Gambar 21. Sudut kontak beberapa pasang bahan')
+            st.image('image/Picture39.png', caption= 'Gambar 22. Sudut kontak beberapa pasang bahan. (Sumber: https://www.slideserve.com/kimn/tegangan-permukaan)')
         with st.expander("📺 Video Konsep Kapilaritas" , expanded=False):
             st.video('https://youtu.be/-ISglH02fIU?si=Sgxe7EDQhdl7zzvx')
         with st.expander("📘 Latihan Soal 7" , expanded=False):
@@ -676,14 +676,14 @@ def app():
         st.header(':blue[8. VISKOSITAS]')
         left19, cent19, last19 = st.columns(3)
         with cent19:
-            st.image('image/Picture40.png', caption='Gambar 22. Peristiwa viskositas')
+            st.image('image/Picture40.png', caption='Gambar 23. Peristiwa viskositas. (Sumber: https://id.quora.com/Apakah-oli-yang-di-gunakan-dalam-balapan-yang-resmi-sama-dengan-oli-oli-yang-di-gunakan-masyarakat-pada-umumnya-Jika-berbeda-sejauh-apa-perbedaanya)')
         st.write('Pernahkah kalian melihat cairan yang berbeda kemudian dituangkan secara bersamaan, ternyata ada cairan yang mempunyai aliran lebih cepat dari cairan lainnya. Contohnya, air mempunyai laju aliran yang lebih cepat dibandingkan dengan minyak, gliserin, ataupun etilen glikol. Peristiwa yang bisa diamati adalah ketika masing-masing cairan tersebut diletakkan pada gelas kemudian diaduk secara bersamaan, maka etilen glikol akan lebih cepat berhenti daripada air.')
         st.write('Peristiwa diatas berkaitan dengan Viskositas atau kekentalan. Lalu, bisakah kalian menganalisis bagaimana proses tersebut dapat terjadi?')
         st.write('Viskositas adalah ukuran yang menyatakan kekentalan suatu cairan atau fluida. Viskositas (kekentalan) berasal dari kata Viscous. Suatu bahan apabila dipanaskan sebelum menjadi cair terlebih dahulu menjadi Viscous.')
         st.write('Tingkat kekentalan (Viscositas) suatu fluida dinyatakan oleh koefisien kekentalan fluida tersebut. Jika sebuah bola dijatuhkan ke dalam fluida, maka akan mengalami gaya gesek antara permukaan benda dengan fluida. Gaya gesek ini besarnya sebanding dengan koefisien viskositas fluida. Menurut Stokes, besar gaya tersebut adalah')
         left20, cent20, last20 = st.columns(3)
         with cent20:
-            st.image('image/Picture41.png', caption='Gambar 23. Gaya gesek benda dengan fluida')
+            st.image('image/Picture41.png', caption='Gambar 24. Gaya gesek benda dengan fluida. (Sumber: https://pakdosen.co.id/viskositas/)')
         st.latex(r'F = {6}{\pi}{r}{\eta}{v}...............(11)')
         st.write('Keterangan:')
         st.write(r'$$F = \text{Gaya gesekan fluida } \,(N)$$')
