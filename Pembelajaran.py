@@ -59,7 +59,7 @@ def app():
 
         #1.2 TEKANAN DALAM FLUIDA
         st.title(':orange[1.2 TEKANAN DALAM FLUIDA]')
-        st.write('Tekanan dan gaya memang berhubungan, tetapi keduanya bukanlah hal yang sama. Tekanan didefinisikan sebagai gaya per satuan luas, di mana gaya F dipahami sebagai besarnya gaya yang bekerja tegak lurus terhadap luas permukaan A:')
+        st.write('Tekanan dan gaya saling terkait, tetapi keduanya bukan hal yang sama. Tekanan didefinisikan sebagai gaya per satuan luas. Artinya, tekanan adalah besarnya gaya yang bekerja tegak lurus pada permukaan tertentu, dibagi dengan luas permukaan tersebut.')
         cola, colb, colc = st.columns(3)
         with colb:
             st.image('gambar/2.png', caption='Gambar 2. Gaya yang diberikan oleh fluida pada permukaan benda yang terendam.')
@@ -68,9 +68,9 @@ def app():
         st.write(r'$$P = \text{Tekanan} \,(N/m^2)$$')
         st.write(r'$$F = \text{Gaya} \,(N)$$')
         st.write(r'$$A = \text{Luas Permukaan} \,(m^2)$$')
-        st.write('Meskipun gaya adalah vektor, tekanan adalah skalar. Dalam bahasa sehari-hari, "tekanan" dan "gaya" berarti hampir sama. Namun, dalam mekanika fluida, kata-kata ini menggambarkan kuantitas yang sangat berbeda. Tekanan bertindak tegak lurus terhadap permukaan apa pun dalam fluida, tidak peduli bagaimana orientasi permukaan tersebut. Oleh karena itu, tekanan tidak memiliki arah sendiri; ini adalah skalar. Sebaliknya, gaya adalah vektor dengan arah yang jelas. Satuan SI untuk tekanan adalah N/m². Satuan ini memiliki nama resmi pascal (Pa), untuk menghormati Blaise Pascal (lihat Bagian 1.5); yaitu, 1 Pa = 1 N/m². Namun, untuk kesederhanaan, kami akan sering menggunakan N/m². Satuan lain yang kadang-kadang digunakan adalah dyne/cm² (cgs), dan dalam sistem Inggris lb/in² (pound per inci persegi, disingkat “psi”). Beberapa satuan lain untuk tekanan dibahas di Bagian 1.4 dan 1.6, bersama dengan konversi antara mereka.')
+        st.write('Meskipun gaya adalah vektor, tekanan adalah skalar. Tekanan hanya memiliki besaran saja. Satuan SI untuk tekanan adalah N/m². Satuan ini disebut pascal (Pa), untuk menghormati Blaise Pascal. Jadi, 1 Pa = 1 N/m². Namun, untuk kesederhanaan, kita sering menggunakan N/m². Satuan lain yang kadang-kadang digunakan adalah dyne/cm² (dalam sistem cgs), dan dalam sistem Inggris lb/in² (pound per inci persegi, disingkat “psi”). Beberapa satuan tekanan lainnya dan konversi di antara mereka dibahas dalam bagian lain.')
         st.latex(r'1 \text{ Pascal} = 1 \text{ Pa} = 1 \text{ N}/m^2')
-        st.write('Tekanan atmosfer $P_{atmosfer}$ adalah tekanan atmosfer bumi, tekanan di dasar lautan udara tempat kita tinggal. Tekanan ini bervariasi dengan perubahan cuaca dan ketinggian. Tekanan atmosfer normal di permukaan laut (nilai rata-rata) adalah 1 atmosfer (atm), yang didefinisikan sebagai 101.325 Pa, ke empat angka penting,')
+        st.write('Tekanan atmosfer $P_{atmosfer}$ adalah tekanan dari atmosfer bumi, yaitu tekanan di dasar lautan udara tempat kita tinggal. Tekanan ini bervariasi dengan perubahan cuaca dan ketinggian. Tekanan atmosfer normal di permukaan laut (nilai rata-rata) adalah 1 atmosfer (atm), yang didefinisikan tepat 101.325 Pa.')
         st.latex(r'P_{atmosfer} = 1 \text{ atm} = 1,013 \text{ x } 10^5 \text{ Pa}')
         st.latex(r'P_{atmosfer} = 1,013 \text{ bar} = 1013 \text{ milibar}')
         with st.expander("📚**Latihan Soal**", expanded=False):
@@ -79,7 +79,7 @@ def app():
             st.write('Kita memiliki $A$ = (4.0 m)(5.0 m) = 20 $m^2$, Jadi dari persamaan (1-2),')
             st.latex(r'P = \frac{F}{A}')
             st.latex(r'F = {P} \text{ x } {A} = 2.0 \text{ x } 10^6 \text{ N} ')
-            st.write('***EVALUASI***: Berbeda dengan air dalam kasus ini, $F$ tidak akan membuat lantai runtuh di sini, karena ada gaya ke atas dengan magnitudo yang sama di bagian bawah lantai. Jika rumah memiliki ruang bawah tanah, gaya ke atas ini diberikan oleh udara di bawah lantai. Dalam kasus ini, jika kita mengabaikan ketebalan lantai, gaya bersih akibat tekanan udara adalah nol.')
+            st.write('***EVALUASI***: Dalam kasus ini, gaya $F$ tidak akan meruntuhkan lantai di sini, karena ada gaya ke atas yang sama besar pada bagian bawah lantai. Jika rumah memiliki ruang bawah tanah, gaya ke atas ini diberikan oleh udara di bawah lantai. Dalam hal ini, jika kita mengabaikan ketebalan lantai, gaya bersih akibat tekanan udara adalah nol (gaya tersebut seimbang).')
             st.write('***KONSEP UTAMA***: Untuk menemukan gaya yang diberikan oleh fluida yang tegak lurus terhadap permukaan, kalikan tekanan fluida dengan luas permukaan. Ini hubungan ini berasal dari definisi tekanan sebagai gaya normal per satuan luas di dalam fluida.')
             st.write('---')
             st.write('***SOAL 4***: Dua kaki orang dengan berat 60 kg menutupi area seluas seluas 500 $cm^2$. (a) Tentukan tekanan yang diberikan oleh kedua kaki di atas tanah. (b) Jika orang tersebut berdiri dengan satu kaki, berapakah tekanan di bawah kaki tersebut?')
@@ -87,15 +87,15 @@ def app():
             st.write('(a) Tekanan pada tanah yang diberikan oleh kedua kaki adalah')
             st.latex(r'P = \frac{F}{A} = \frac{{m}{g}}{A} = \frac{(60 \text{ kg})(9.8 \text{m}/s^2)}{0.050 m^2} = 12 \text{ x } 10^3 \text{N}/m^2')
             st.write('Jika orang tersebut berdiri dengan satu kaki, gaya masih sama dengan berat badan orang tersebut, tetapi luasnya akan menjadi setengahnya, sehingga tekanan ${F}/{A}$ akan menjadi dua kali lipat: $12$ x $10^3$ $N/m^2$')
-        st.write('Tekanan sangat berguna untuk menangani fluida. Ini adalah pengamatan eksperimental bahwa fluida memberikan tekanan di setiap arah. Hal ini sudah diketahui oleh perenang dan penyelam yang merasakan tekanan air di semua bagian tubuh mereka. Pada kedalaman apa pun dalam fluida diam, tekanannya sama dalam semua arah pada kedalaman tersebut. Untuk melihat mengapa, pertimbangkan sebuah kubus kecil dari fluida (Gambar 2) yang begitu kecil sehingga kita dapat menganggapnya sebagai titik dan dapat mengabaikan gaya gravitasi padanya. Tekanan di satu sisi harus sama dengan tekanan di sisi yang berlawanan. Jika hal ini tidak benar, akan ada gaya bersih pada kubus tersebut dan kubus akan mulai bergerak. Jika fluidanya tidak mengalir, maka tekanan harus sama.')
+        st.write('Tekanan sangat berguna untuk memahami fluida. Secara eksperimental, diketahui bahwa fluida memberikan tekanan ke segala arah. Ini dikenal baik oleh perenang dan penyelam yang merasakan tekanan air di seluruh tubuh mereka. Pada kedalaman tertentu dalam fluida yang diam, tekanannya sama di semua arah pada kedalaman tersebut. Untuk memahami alasannya, bayangkan ada kubus kecil dalam fluida yang sangat kecil sehingga kita bisa menganggapnya sebagai titik dan mengabaikan gaya gravitasi padanya. Tekanan pada satu sisi kubus harus sama dengan tekanan pada sisi yang berlawanan. Jika tidak, akan ada gaya yang menyebabkan kubus itu bergerak. Jika fluida tersebut tidak mengalir, maka tekanannya harus sama.')
         cold, cole, colf = st.columns(3)
         with cole:
             st.image('gambar/3.png', caption='Gambar 3. Jika ada komponen gaya sejajar dengan permukaan padat dari wadah.')
-        st.write('Untuk fluida yang diam, gaya akibat tekanan fluida selalu bertindak tegak lurus terhadap setiap permukaan padat yang disentuhnya. Jika ada komponen gaya sejajar dengan permukaan, seperti yang ditunjukkan pada (Gambar 3), maka menurut Hukum Ketiga Newton, permukaan padat akan memberikan gaya balik pada fluida, yang akan menyebabkan fluida mengalir, bertentangan dengan asumsi kita bahwa fluida diam. Oleh karena itu, gaya akibat tekanan dalam fluida yang diam selalu tegak lurus terhadap permukaan yang bersentuhan dengan fluida.')
+        st.write('Untuk fluida yang diam, gaya akibat tekanan fluida selalu bekerja tegak lurus pada setiap permukaan padat yang disentuhnya. Jika ada komponen gaya sejajar dengan permukaan, seperti yang ditunjukkan pada (Gambar 3), maka menurut Hukum Ketiga Newton, permukaan padat akan memberikan gaya balik pada fluida, yang akan membuat fluida mengalir. Ini bertentangan dengan asumsi kita bahwa fluida diam. Oleh karena itu, gaya akibat tekanan dalam fluida yang diam selalu tegak lurus terhadap permukaan yang bersentuhan dengan fluida.')
         colg, colh, colj = st.columns(3)
         with colh:
             st.image('gambar/4.png', caption='Gambar 4. Tekanan pada kedalaman h dalam cairan')
-        st.write('Sekarang kita menghitung secara kuantitatif bagaimana tekanan dalam cairan dengan kerapatan seragam bervariasi dengan *kedalaman*. Mari kita lihat kedalaman $h$ di bawah permukaan cairan, seperti yang ditunjukkan dalam Gambar 4 (artinya, permukaan atas cairan berada pada ketinggian $h$ di atas level ini). Tekanan karena cairan pada kedalaman $h$ ini disebabkan oleh berat kolom cairan di atasnya. Oleh karena itu, gaya karena berat cairan yang bertindak pada *luas* $A$ adalah $F = {m}{g} = (ρV)g = {ρ}{A}{h}{g}$, di mana ${A}{h}$ adalah volume cairan di atas luas $A$, $ρ$ adalah kerapatan cairan (dianggap konstan), dan $g$ adalah percepatan gravitasi. Tekanan $P$ karena berat cairan kemudian')
+        st.write('Sekarang kita menghitung bagaimana tekanan dalam suatu cairan dengan massa jenis seragam berubah dengan kedalaman. Mari kita lihat kedalaman $h$ di bawah permukaan cairan, seperti yang ditunjukkan dalam Gambar 4 (artinya, permukaan atas cairan berada pada ketinggian $h$ di atas level ini). Tekanan pada kedalaman $h$ ini disebabkan oleh berat kolom cairan di atasnya. Jadi, gaya yang disebabkan oleh berat cairan yang bekerja pada area $A$ adalah $F = {m}{g} = (ρV)g = {ρ}{A}{h}{g}$, di mana $ρ$ adalah massa jenis cairan (diasumsikan konstan), $g$ adalah percepatan gravitasi, $A$ adalah area yang sedang kita perhatikan, $h$ adalah kedalaman, ${A}{h}$ adalah volume cairan di atas area $A$. Tekanan $P$ yang disebabkan oleh berat cairan tersebut adalah:')
         st.latex(r'P = \frac{F}{A} = \frac{ρAhg}{A}')
         st.latex(r'P = {ρ}{g}{h} .........................................(1-3)')
         st.write('Dengan keterangan:')
@@ -103,29 +103,30 @@ def app():
         st.write('$ρ$ = Massa Jenis fluida $(kg/m^3)$')
         st.write('$g$ = Percepatan gravitasi $(m/s^2)$')
         st.write('$h$ = Kedalaman (m)')
-        st.write('Perhatikan bahwa Luas Penampang $A$ tidak mempengaruhi tekanan pada kedalaman tertentu. Tekanan fluida berbanding lurus dengan massa jenis cairan dan kedalaman di dalam cairan. Secara umum, *tekanan pada kedalaman yang sama di dalam cairan yang seragam adalah sama*.')
-        st.write('Persamaan (1-3) memberi tahu kita apa tekanan pada kedalaman $h$ di dalam cairan, karena cairan itu sendiri. Tetapi bagaimana jika ada tekanan tambahan yang diberikan di permukaan cairan, seperti tekanan atmosfer atau piston yang mendorong ke bawah? Dan bagaimana jika kerapatan fluida tidak konstan? Gas cukup dapat dipadatkan dan oleh karena itu kerapatan mereka dapat bervariasi secara signifikan dengan kedalaman. Cairan juga dapat dipadatkan, meskipun kita sering dapat mengabaikan variasi dalam kerapatan. (Salah satu pengecualian adalah di kedalaman laut di mana berat air di atas secara signifikan memadatkan air dan meningkatkan kerapatannya.) Untuk menangani ini, dan kasus lainnya, kita sekarang memperlakukan kasus umum dalam menentukan bagaimana tekanan dalam suatu fluida bervariasi dengan kedalaman.')
+        st.write('Ini berarti tekanan dalam cairan bertambah seiring dengan bertambahnya kedalaman, berdasarkan massa jenis cairan dan percepatan gravitasi.')
+        st.write('Perhatikan bahwa Luas Penampang $A$ tidak mempengaruhi tekanan pada kedalaman tertentu. Tekanan fluida berbanding lurus dengan massa jenis cairan dan kedalaman dalam cairan. Secara umum, *tekanan pada kedalaman yang sama dalam cairan yang seragam adalah sama*.')
+        st.write('Persamaan (1-3) memberi tahu kita tekanan apa yang ada pada kedalaman $h$ di dalam cairan, disebabkan oleh cairan itu sendiri. Namun bagaimana jika ada tekanan tambahan yang diberikan di permukaan cairan, seperti tekanan atmosfer atau piston yang mendorong ke bawah? Dan bagaimana jika massa jenis fluida tidak konstan? Gas dapat sangat ditekan sehingga massa jenisnya dapat bervariasi dengan signifikan berdasarkan kedalaman. Cairan juga bisa terkompres, meskipun kita sering bisa mengabaikan variasi massa jenisnya. Salah satu pengecualian terjadi di dasar laut di mana berat air di atasnya secara signifikan menekan dan meningkatkan massa jenisnya. Untuk menangani ini, dan kasus lainnya, sekarang dalam memperlakukan kasus umum saat menentukan bagaimana tekanan dalam suatu fluida bervariasi dengan kedalaman.')
         colk, coll, colm = st.columns(3)
         with coll:
             st.image('gambar/5.png', caption='Gambar 5. Gaya di atas bidang datar, volume fluida yang datar dan seperti lempengan untuk menentukan tekanan P sebagai fungsi ketinggian y dalam fluida.')
-        st.write('Seperti yang ditunjukkan dalam Gambar 5, mari tentukan tekanan pada setiap ketinggian $y$ di atas suatu titik referensi (seperti dasar laut atau dasar tangki atau kolam renang). Dalam fluida ini, pada ketinggian $y$, kita pertimbangkan volume fluida kecil, datar, berbentuk pelat yang luasnya adalah $A$ dan ketebalannya (infinitesimal) adalah $dy$, seperti yang ditunjukkan. Biarkan tekanan yang bertindak ke atas pada permukaan bawahnya (pada ketinggian $y$) adalah $P$. Tekanan yang bertindak ke bawah pada permukaan atas pelat kecil kita (pada ketinggian $y + dy$) ditunjukkan sebagai $P + dP$. Tekanan fluida yang bertindak pada pelat kita dengan demikian memberikan gaya yang sama dengan $PA$ ke atas pelat kita dan gaya yang sama dengan $(P + dP)A$ ke bawah pada pelat itu. Satu-satunya gaya lain yang bertindak secara vertikal pada pelat adalah gaya gravitasi (infinitesimal) $dF_G$, yang pada pelat kita dengan massa $dm$ adalah')
+        st.write('Dalam Gambar 5, kita mencari tekanan pada setiap ketinggian $y$ di atas suatu titik acuan (seperti dasar laut/dasar tangki/kolam renang). Di dalam fluida ini, pada ketinggian $y$, kita mempertimbangkan sebuah volume fluida yang datar dan kecil, berbentuk pelat dengan luas $A$ dan ketebalan $(dy)$ yang sangat kecil, seperti yang ditunjukkan. Biarkan tekanan yang bekerja ke atas pada permukaan bawahnya (pada ketinggian $y$) adalah $P$. Tekanan yang berkerja ke bawah pada permukaan atas pelat kecil kita (pada ketinggian $y + dy$) adalah $P + dP$. Tekanan fluida yang bertindak pada pelat kita menghasilkan gaya sebesar $PA$ ke atas dan gaya sebesar $(P + dP)A$ ke bawah pada pelat tersebut. Satu-satunya gaya lain yang bertindak secara vertikal pada pelat adalah gaya gravitasi yang sangat kecil $dF_G$, yang pada pelat kita dengan massa $dm$.')
         st.latex(r'dF_G= (dm)g = ρg \text{ }dV = ρgA \text{ } dy,')
         st.write('di mana $ρ$ adalah kerapatan fluida pada ketinggian $y$. Karena fluida dianggap dalam keadaan diam, pelat kita berada dalam kesetimbangan sehingga gaya bersih pada pelat tersebut harus nol. Oleh karena itu, kita memiliki')
         st.latex(r'PA - (P + dP)A - ρgA \text{ } dy = 0')
         st.write('yang bila disederhanakan menjadi')
         st.latex(r'\frac{dP}{dy}=-ρg......................................(1-4)')
-        st.write('Hubungan ini memberi tahu kita bagaimana tekanan dalam fluida bervariasi dengan ketinggian di atas titik referensi mana pun. Tanda minus menunjukkan bahwa tekanan berkurang dengan peningkatan ketinggian; atau bahwa tekanan meningkat dengan kedalaman (penurunan ketinggian).')
-        st.write('Jika tekanan pada ketinggian $y_1$ dalam fluida adalah $P_1$, dan pada ketinggian $y_2$ adalah $P_2$, maka kita dapat mengintegrasikan Persamaan 1394 untuk mendapatkan')
+        st.write('Hubungan ini memberi tahu kita bagaimana tekanan dalam fluida bervariasi dengan ketinggian di atas titik referensi apapun. Tanda minus menunjukkan bahwa tekanan akan berkurang dengan bertambahnya ketinggian; atau bahwa tekanan meningkat dengan kedalaman (ketinggian yang lebih rendah).')
+        st.write('Jika tekanan pada ketinggian $y_1$ dalam fluida adalah $P_1$, dan pada ketinggian $y_2$ adalah $P_2$, maka kita dapat mengintegrasikan Persamaan (1-4) untuk mendapatkan hasilnya')
         st.latex(r'\int_{P1}^{P2} dP = - \int_{y1}^{y2} ρ g \, dy')
         st.write("yang dapat disederhanakan menjadi:")
-        st.latex(r'P2 - P1 = - \int_{y1}^{y2} ρ g \, dy...................(1.5)')
-        st.write('di mana kita mengasumsikan $ρ$ adalah fungsi dari ketinggian $y$: $ρ = ρ(y)$. Ini adalah hubungan umum, dan sekarang kita menerapkannya pada dua kasus khusus: (1) tekanan dalam cairan dengan kerapatan seragam dan (2) variasi tekanan di atmosfer Bumi.')
-        st.write('Untuk cairan di mana variasi kerapatan dapat diabaikan, $ρ$ = konstan dan Persamaan (1-5) dapat diintegrasikan dengan mudah:')
+        st.latex(r'P2 - P1 = - \int_{y1}^{y2} ρ g \, dy...................(1-5)')
+        st.write('Di sini kita mengasumsikan $ρ$ adalah fungsi dari ketinggian $y$: $ρ = ρ(y)$. Ini adalah hubungan umum, dan sekarang kita menerapkannya pada dua kasus khusus: (1) tekanan dalam cairan dengan massa jenis yang seragam dan (2) variasi tekanan dalam atmosfer Bumi.')
+        st.write('Untuk cairan di mana variasi massa jenisnya dapat diabaikan, $ρ$ adalah konstan dan Persamaan (1-5) dapat diintegrasikan dengan mudah:')
         st.latex(r'P_2 - P_1 = -ρ g (y_2 - y_1)...........................(1-6a)')
         coln, colo, colp = st.columns(3)
         with colo:
             st.image('gambar/6.png', caption='Gambar 6. Tekanan eksternal di bagian atas cairan permukaan.')
-        st.write('Untuk situasi sehari-hari cairan dalam wadah terbuka, seperti air di dalam gelas, kolam renang, danau, atau laut, terdapat permukaan bebas di bagian atas yang terbuka ke atmosfer. Akan lebih mudah untuk mengukur jarak dari permukaan atas ini. Artinya, kita biarkan $h$ menjadi kedalaman dalam cairan di mana $h = y_2 - y_1$ seperti yang ditunjukkan pada Gambar 6. Jika kita biarkan $y_2$ menjadi posisi permukaan atas, maka $P_2$ mewakili tekanan atmosfer, $P_0$, di permukaan atas. Kemudian, dari Persamaan (1-6a), tekanan $P (= P_1)$ pada kedalaman $h$ dalam fluida adalah')
+        st.write('Untuk situasi sehari-hari di mana cairan berada dalam wadah terbuka, seperti air di dalam gelas, kolam renang, danau, atau laut, terdapat permukaan bebas di bagian atas yang terkena atmosfer. Biasanya, kita mengukur jarak dari permukaan atas ini. Misalnya, kita menetapkan kedalaman $h$ di dalam cairan di mana $h = y_2 - y_1$ seperti yang ditunjukkan pada Gambar 6. Jika kita anggap $y_2$ adalah posisi permukaan atas, maka $P_2$ mewakili tekanan atmosfer, $P_0$, di permukaan atas. Dari Persamaan (1-6a), tekanan $P (= P_1)$ pada kedalaman $h$ dalam fluida adalah')
         st.latex(r'P = P_0 + ρ g h............\text{[h adalah kedalaman cairan]}..(1-6b)')
         st.write('Perhatikan bahwa Persamaan (1-6b) hanyalah tekanan cairan Persamaan (1-3) ditambah tekanan $P_0$ akibat atmosfer di atasnya.')
         with st.expander("📚**Latihan Soal**", expanded=False):
@@ -178,7 +179,7 @@ def app():
             st.write('Pada ketinggian sekitar 5500m (sekitar 18.000 kaki), tekanan atmosfernya setengah dari tekanan di permukaan laut. Pendaki gunung sering menggunakan tabung oksigen di ketinggian yang sangat tinggi.')
 
         #1.3 TEKANAN ATMOSFER DAN TEKANAN GAUGE
-        st.title(':orange[1.3 TEKANAN ATMOSFER DAN TEKANAN PENGUKUR]')
+        st.title(':orange[1.3 TEKANAN ATMOSFER DAN TEKANAN GAUGE]')
 
         # Tekanan Atmosfer
         st.header(':blue[Tekanan Atmosfer]')
@@ -197,9 +198,9 @@ def app():
         
         # Tekanan Gauge
         st.header(':blue[Tekanan Gauge]')
-        st.write('Penting untuk dicatat bahwa alat ukur tekanan ban, dan sebagian besar alat ukur tekanan lainnya, mencatat tekanan di atas tekanan atmosfer. Ini disebut sebagai **tekanan gauge**. Oleh karena itu, untuk mendapatkan **tekanan mutlak**, $P$, kita harus menambahkan tekanan atmosfer, $P_0$, dengan tekanan pengukur, $P_G$:')
+        st.write('Penting untuk dicatat bahwa alat ukur tekanan ban, dan sebagian besar alat ukur tekanan lainnya, mencatat tekanan di atas tekanan atmosfer. Ini disebut sebagai **tekanan gauge**. Oleh karena itu, untuk mendapatkan **tekanan mutlak**, $P$, kita harus menambahkan tekanan atmosfer, $P_0$, dengan tekanan gauge, $P_G$:')
         st.latex(r'P = P_G + P_0')
-        st.write('Jika sebuah alat ukur tekanan ban mencatat 220 kPa, maka tekanan mutlak dalam ban adalah 220 kPa + 101 kPa = 321 kPa, setara dengan sekitar 3.2 atm (tekanan pengukur 2.2 atm).')
+        st.write('Jika sebuah alat ukur tekanan ban mencatat 220 kPa, maka tekanan mutlak dalam ban adalah 220 kPa + 101 kPa = 321 kPa, setara dengan sekitar 3.2 atm (tekanan gauge 2.2 atm).')
 
 
         #1.4 HUKUM PASCAL
