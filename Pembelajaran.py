@@ -34,7 +34,7 @@ def app():
         st.write('dan berat suatu benda adalah sebagai berikut')
         st.latex(r'{m}{g} = {\rho}{V}{g}')
         st.write('Satuan SI untuk massa jenis adalah $kg/m^3$. Terkadang massa jenis diberikan dalam $g/cm^3$. Perhatikan bahwa massa jenis yang diberikan dalam $g/cm^3$ harus dikalikan dengan 1000 untuk memberikan hasil dalam kg/m^3. Contohnya, massa jenis aluminium adalah $ρ = 2.70 g/cm^3$, yang sama dengan $2700 kg/m^3$. Massa jenis berbagai zat diberikan dalam Tabel 1-1. Tabel tersebut menentukan suhu dan tekanan atmosfer karena keduanya mempengaruhi massa jenis (efeknya sedikit untuk cairan dan padatan). Perhatikan bahwa udara sekitar 1000 kali lebih tidak padat daripada air.')
-        st.image('gambar/1.png', caption='Gambar 1. Massa Jenis Beberapa Zat Umum')
+        st.image('gambar/1.png', caption='Gambar 1. Massa Jenis Beberapa Zat Umum. (Giancoli, D. (2020))')
         st.write('Konsep massa jenis sangat membantu dalam mempelajari fluida karena kita tidak selalu berurusan dengan volume atau massa yang "tetap".')
         with st.expander("📚**Latihan Soal**", expanded=False):
             st.write('***SOAL 1***: Tentukan massa dan berat udara pada suhu $20°C$ di ruang tamu dengan lantai 4.0 m x 5.0 m dan langit-langit setinggi 3.0 m, serta massa dan berat air dengan volume yang sama.')
@@ -62,7 +62,7 @@ def app():
         st.write('Tekanan dan gaya saling terkait, tetapi keduanya bukan hal yang sama. Tekanan didefinisikan sebagai gaya per satuan luas. Artinya, tekanan adalah besarnya gaya yang bekerja tegak lurus pada permukaan tertentu, dibagi dengan luas permukaan tersebut.')
         cola, colb, colc = st.columns(3)
         with colb:
-            st.image('gambar/2.png', caption='Gambar 2. Gaya yang diberikan oleh fluida pada permukaan benda yang terendam.')
+            st.image('gambar/2.png', caption='Gambar 2. Gaya yang diberikan oleh fluida pada permukaan benda yang terendam. (Giancoli, D. (2020)')
         st.latex(r'P = \frac{F}{A}........................................(1-2)')
         st.write('Dengan Keterangan:')
         st.write(r'$$P = \text{Tekanan} \,(N/m^2)$$')
@@ -90,11 +90,11 @@ def app():
         st.write('Tekanan sangat berguna untuk memahami fluida. Secara eksperimental, diketahui bahwa fluida memberikan tekanan ke segala arah. Ini dikenal baik oleh perenang dan penyelam yang merasakan tekanan air di seluruh tubuh mereka. Pada kedalaman tertentu dalam fluida yang diam, tekanannya sama di semua arah pada kedalaman tersebut. Untuk memahami alasannya, bayangkan ada kubus kecil dalam fluida yang sangat kecil sehingga kita bisa menganggapnya sebagai titik dan mengabaikan gaya gravitasi padanya. Tekanan pada satu sisi kubus harus sama dengan tekanan pada sisi yang berlawanan. Jika tidak, akan ada gaya yang menyebabkan kubus itu bergerak. Jika fluida tersebut tidak mengalir, maka tekanannya harus sama.')
         cold, cole, colf = st.columns(3)
         with cole:
-            st.image('gambar/3.png', caption='Gambar 3. Jika ada komponen gaya sejajar dengan permukaan padat dari wadah.')
+            st.image('gambar/3.png', caption='Gambar 3. Jika ada komponen gaya sejajar dengan permukaan padat dari wadah.(Giancoli, D. (2020)')
         st.write('Untuk fluida yang diam, gaya akibat tekanan fluida selalu bekerja tegak lurus pada setiap permukaan padat yang disentuhnya. Jika ada komponen gaya sejajar dengan permukaan, seperti yang ditunjukkan pada (Gambar 3), maka menurut Hukum Ketiga Newton, permukaan padat akan memberikan gaya balik pada fluida, yang akan membuat fluida mengalir. Ini bertentangan dengan asumsi kita bahwa fluida diam. Oleh karena itu, gaya akibat tekanan dalam fluida yang diam selalu tegak lurus terhadap permukaan yang bersentuhan dengan fluida.')
         colg, colh, colj = st.columns(3)
         with colh:
-            st.image('gambar/4.png', caption='Gambar 4. Tekanan pada kedalaman h dalam cairan')
+            st.image('gambar/4.png', caption='Gambar 4. Tekanan pada kedalaman h dalam cairan. (Giancoli, D. (2020)')
         st.write('Sekarang kita menghitung bagaimana tekanan dalam suatu cairan dengan massa jenis seragam berubah dengan kedalaman. Mari kita lihat kedalaman $h$ di bawah permukaan cairan, seperti yang ditunjukkan dalam Gambar 4 (artinya, permukaan atas cairan berada pada ketinggian $h$ di atas level ini). Tekanan pada kedalaman $h$ ini disebabkan oleh berat kolom cairan di atasnya. Jadi, gaya yang disebabkan oleh berat cairan yang bekerja pada area $A$ adalah $F = {m}{g} = (ρV)g = {ρ}{A}{h}{g}$, di mana $ρ$ adalah massa jenis cairan (diasumsikan konstan), $g$ adalah percepatan gravitasi, $A$ adalah area yang sedang kita perhatikan, $h$ adalah kedalaman, ${A}{h}$ adalah volume cairan di atas area $A$. Tekanan $P$ yang disebabkan oleh berat cairan tersebut adalah:')
         st.latex(r'P = \frac{F}{A} = \frac{ρAhg}{A}')
         st.latex(r'P = {ρ}{g}{h} .........................................(1-3)')
@@ -108,7 +108,7 @@ def app():
         st.write('Persamaan (1-3) memberi tahu kita tekanan apa yang ada pada kedalaman $h$ di dalam cairan, disebabkan oleh cairan itu sendiri. Namun bagaimana jika ada tekanan tambahan yang diberikan di permukaan cairan, seperti tekanan atmosfer atau piston yang mendorong ke bawah? Dan bagaimana jika massa jenis fluida tidak konstan? Gas dapat sangat ditekan sehingga massa jenisnya dapat bervariasi dengan signifikan berdasarkan kedalaman. Cairan juga bisa terkompres, meskipun kita sering bisa mengabaikan variasi massa jenisnya. Salah satu pengecualian terjadi di dasar laut di mana berat air di atasnya secara signifikan menekan dan meningkatkan massa jenisnya. Untuk menangani ini, dan kasus lainnya, sekarang dalam memperlakukan kasus umum saat menentukan bagaimana tekanan dalam suatu fluida bervariasi dengan kedalaman.')
         colk, coll, colm = st.columns(3)
         with coll:
-            st.image('gambar/5.png', caption='Gambar 5. Gaya di atas bidang datar, volume fluida yang datar dan seperti lempengan untuk menentukan tekanan P sebagai fungsi ketinggian y dalam fluida.')
+            st.image('gambar/5.png', caption='Gambar 5. Gaya di atas bidang datar. (Giancoli, D. (2020)')
         st.write('Dalam Gambar 5, kita mencari tekanan pada setiap ketinggian $y$ di atas suatu titik acuan (seperti dasar laut/dasar tangki/kolam renang). Di dalam fluida ini, pada ketinggian $y$, kita mempertimbangkan sebuah volume fluida yang datar dan kecil, berbentuk pelat dengan luas $A$ dan ketebalan $(dy)$ yang sangat kecil, seperti yang ditunjukkan. Biarkan tekanan yang bekerja ke atas pada permukaan bawahnya (pada ketinggian $y$) adalah $P$. Tekanan yang berkerja ke bawah pada permukaan atas pelat kecil kita (pada ketinggian $y + dy$) adalah $P + dP$. Tekanan fluida yang bertindak pada pelat kita menghasilkan gaya sebesar $PA$ ke atas dan gaya sebesar $(P + dP)A$ ke bawah pada pelat tersebut. Satu-satunya gaya lain yang bertindak secara vertikal pada pelat adalah gaya gravitasi yang sangat kecil $dF_G$, yang pada pelat kita dengan massa $dm$.')
         st.latex(r'dF_G= (dm)g = ρg \text{ }dV = ρgA \text{ } dy,')
         st.write('di mana $ρ$ adalah kerapatan fluida pada ketinggian $y$. Karena fluida dianggap dalam keadaan diam, pelat kita berada dalam kesetimbangan sehingga gaya bersih pada pelat tersebut harus nol. Oleh karena itu, kita memiliki')
@@ -125,7 +125,7 @@ def app():
         st.latex(r'P_2 - P_1 = -ρ g (y_2 - y_1)...........................(1-6a)')
         coln, colo, colp = st.columns(3)
         with colo:
-            st.image('gambar/6.png', caption='Gambar 6. Tekanan eksternal di bagian atas cairan permukaan.')
+            st.image('gambar/6.png', caption='Gambar 6. Tekanan eksternal di bagian atas cairan permukaan. (Giancoli, D. (2020)')
         st.write('Untuk situasi sehari-hari di mana cairan berada dalam wadah terbuka, seperti air di dalam gelas, kolam renang, danau, atau laut, terdapat permukaan bebas di bagian atas yang terkena atmosfer. Biasanya, kita mengukur jarak dari permukaan atas ini. Misalnya, kita menetapkan kedalaman $h$ di dalam cairan di mana $h = y_2 - y_1$ seperti yang ditunjukkan pada Gambar 6. Jika kita anggap $y_2$ adalah posisi permukaan atas, maka $P_2$ mewakili tekanan atmosfer, $P_0$, di permukaan atas. Dari Persamaan (1-6a), tekanan $P (= P_1)$ pada kedalaman $h$ dalam fluida adalah')
         st.latex(r'P = P_0 + ρ g h............\text{[h adalah kedalaman cairan]}..(1-6b)')
         st.write('Perhatikan bahwa Persamaan (1-6b) hanyalah tekanan cairan Persamaan (1-3) ditambah tekanan $P_0$ akibat atmosfer di atasnya.')
@@ -133,14 +133,14 @@ def app():
             st.write('***SOAL 5***: Tekanan pada keran. Permukaan air di dalam tangki penyimpanan berada 30 m di atas keran air di dapur sebuah rumah, seperti yang ditunjukkan pada Gambar 1396. Hitung perbedaan tekanan air antara keran dan permukaan air di dalam tangki.')
             colq, colr, cols = st.columns(3)
             with colr:
-                st.image('gambar/7.png', caption='Gambar 7. Tekanan Pada Keran')
+                st.image('gambar/7.png', caption='Gambar 7. Tekanan Pada Keran. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Pendekatan Air praktis tidak dapat dipadatkan, sehingga $ρ$ konstan bahkan untuk $h = 30$ m saat digunakan dalam Persamaan (1-6b). Hanya $h$ yang penting; kita dapat mengabaikan "rute" pipa dan tikungannya. Kita mengasumsikan tekanan atmosfer di permukaan air dalam tangki penyimpanan sama dengan di keran air. Jadi, perbedaan tekanan air antara keran air dan permukaan air di dalam tangki adalah')
             st.latex(r'∆_P = ρ g h = (1.0 \text{ x } 10^3 \text{ kg}/m^3)(9.8 \text{ m}/s^2)(30m) = 2.9 \text{ x } 10^5 \text{ N}/m^2')
             st.write('***CATATAN***: Ketinggian $h$ terkadang disebut kepala tekanan. Dalam Contoh ini, kepala air adalah 30 m di keran air. Diameter yang sangat berbeda dari tangki dan keran air tidak memengaruhi hasil (hanya tinggi yang penting).')
             st.write('***SOAL 6***: Gaya pada jendela akuarium. Hitung gaya akibat tekanan air yang diberikan pada jendela pandangan akuarium berukuran 1.0 m * 3.0 m yang ujung atasnya berada 1.0 m di bawah permukaan air, seperti pada Gambar 8.')
             colt, colu, colv = st.columns(3)
             with colu:
-                st.image('gambar/8.png', caption='Gambar 8. Gaya Pada Jendela Akuarium')
+                st.image('gambar/8.png', caption='Gambar 8. Gaya Pada Jendela Akuarium. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Pada kedalaman $h$, tekanan yang disebabkan oleh air diberikan oleh Persamaan (1-6b). Bagi jendela menjadi strip horizontal tipis dengan panjang $l = 3.0$ m dan ketebalan $dy$, seperti yang ditunjukkan dalam Gambar 8. Kita memilih sistem koordinat dengan $y = 0$ di permukaan air dan $y$ positif ke bawah. (Dengan pilihan ini, tanda minus dalam Persamaan (1-6a) menjadi plus, atau kita menggunakan Persamaan (1-6b) dengan $y = h$.) Gaya akibat tekanan air pada setiap strip adalah $dF = PdA = ρgyl$ dy.')
             st.write('Total kekuatan pada jendela diberikan oleh integral:')
             st.latex(r'\int_{y_1 = 1.0m}^{y_2 = 2.0m} ρgyl \text{ dy} = \frac{1}{2}ρgl(y^{\frac{2}{2}}-y^{\frac{2}{1}})')
@@ -193,7 +193,7 @@ def app():
             st.write('***SOAL 8***: **Jari menahan air di dalam sedotan**. Anda memasukkan sedotan dengan panjang $l$ ke dalam segelas air yang tinggi. Anda menempatkan jari Anda di atas sedotan, menangkap beberapa udara di atas air tetapi mencegah udara tambahan masuk atau keluar, kemudian Anda mengangkat sedotan dari air. Anda menemukan bahwa sedotan tetap mempertahankan sebagian besar air (Gambar 9a). Apakah udara di ruang antara jari Anda dan bagian atas air memiliki tekanan $P$ yang lebih besar dari, sama dengan, atau lebih kecil dari tekanan atmosfer $P_0$ di luar sedotan?')
             colw, colx, coly = st.columns(3)
             with colx:
-                st.image('gambar/9.png', caption='Gambar 9. Ilustrasi Soal')
+                st.image('gambar/9.png', caption='Gambar 9. Ilustrasi Soal. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Pertimbangkan gaya pada kolom air (Gambar 9b). Tekanan atmosfer di luar sedotan mendorong ke atas pada air di bagian bawah sedotan, gravitasi menarik air ke bawah, dan tekanan udara di dalam bagian atas sedotan mendorong ke bawah pada air. Karena air dalam keadaan keseimbangan, gaya ke atas karena tekanan atmosfer $P_0$ harus seimbang dengan dua gaya ke bawah. Satu-satunya cara ini mungkin terjadi adalah jika tekanan udara $P$ di dalam sedotan di bagian atas lebih kecil dari tekanan atmosfer di luar sedotan. (Ketika Anda awalnya mengeluarkan sedotan dari gelas air, sedikit air mungkin keluar dari bagian bawah sedotan, sehingga meningkatkan volume udara yang terperangkap dan mengurangi kepadatannya dan tekanannya.)')
         
         # Tekanan Gauge
@@ -207,7 +207,7 @@ def app():
         st.title(':orange[1.4 HUKUM PASCAL]')
         st.write('Atmosfer Bumi memberikan tekanan pada semua benda yang berhubungan dengannya, termasuk fluida lain. Tekanan eksternal yang bekerja pada suatu fluida ditransmisikan ke seluruh fluida tersebut. Sebagai contoh, sesuai dengan Persamaan (1-3), tekanan yang disebabkan oleh air pada kedalaman 100 m di bawah permukaan sebuah danau adalah $P = \\rho g \Delta h$ = $(1000$ $kg/m^3)$ $(9.8 m/s^2)$ $(100$ $m)$ = $9.8$ x $10^5$ $N/m^2$, atau $9.7$ $atm$.')
         st.write('Namun, tekanan total 100 m di bawah permukaan sebuah danau adalah akibat dari tekanan air ditambah dengan tekanan udara di atasnya. Oleh karena itu, tekanan total (jika danau tersebut dekat dengan permukaan laut) adalah 9.7 atm + 1.0 atm = 10.7 atm. Ini hanya satu contoh dari prinsip umum yang dikaitkan dengan filsuf dan ilmuwan Prancis, Blaise Pascal (1623-1662). **Prinsip Pascal** menyatakan bahwa *jika tekanan eksternal diterapkan pada suatu fluida yang terkungkung, tekanan di setiap titik dalam fluida tersebut akan meningkat sebanyak itu.*')
-        st.image('gambar/10.png', caption='Gambar 10. Aplikasi dari Prinsip Pascal: (a) pengangkatan hidrolik; (b) rem hidrolik pada mobil.')
+        st.image('gambar/10.png', caption='Gambar 10. Aplikasi dari Prinsip Pascal: (a) pengangkatan hidrolik; (b) rem hidrolik pada mobil. (Giancoli, D. (2020)')
         st.write('Sejumlah perangkat praktis memanfaatkan prinsip Pascal. Salah satu contohnya adalah lift hidrolik, yang diilustrasikan dalam (Gambar 10a), di mana gaya input kecil digunakan untuk menghasilkan gaya output besar dengan membuat luas piston output lebih besar dari luas piston input. Untuk melihat bagaimana ini berfungsi, kita asumsikan piston input dan output berada pada ketinggian yang sama (setidaknya secara aproximasi). Kemudian gaya input eksternal $F_{in}$, menurut prinsip Pascal, meningkatkan tekanan secara merata di seluruh fluida. Oleh karena itu, pada level yang sama (lihat Gambar 10a),')
         st.latex(r'P_{out} = P_{in}')
         st.write('di mana kuantitas input direpresentasikan oleh subskrip "in" dan output oleh "out." Karena $P = \\frac{F}{A}$, kita menuliskan kesetaraan di atas sebagai')
@@ -220,7 +220,7 @@ def app():
         #1.5 PENGUKURAN TEKANAN, GAUGE, DAN BAROMETER
         st.title(':orange[1.5 PENGUKURAN TEKANAN, GAUGE, DAN BAROMETER]')
         st.write('Banyak perangkat telah diciptakan untuk mengukur tekanan, beberapa di antaranya ditunjukkan dalam (Gambar 11). Yang paling sederhana adalah manometer tabung terbuka (Gambar 11a) yang merupakan tabung berbentuk U yang diisi sebagian dengan cairan, biasanya merkuri atau air. tekanan P yang diukur terkait dengan perbedaan ketinggian ∆h dari dua tingkat cairan dengan hubungan')
-        st.image('gambar/11.png', caption='Gambar 11. Tekanan gauge: (a) manometer tabung terbuka, (b) pengukur aneroid, dan (c) pengukur tekanan ban yang umum.')
+        st.image('gambar/11.png', caption='Gambar 11. Tekanan gauge: (a) manometer tabung terbuka, (b) pengukur aneroid, dan (c) pengukur tekanan ban yang umum. (Giancoli, D. (2020)')
         st.latex(r'P = P_0 + \rho g ∆h..................[Manometer]')
         st.write('di mana $P_0$ adalah tekanan atmosfer (beraksi pada bagian atas cairan di tabung kiri), dan $\\rho$ adalah kerapatan cairan dalam tabung berbentuk U. Perhatikan bahwa kuantitas $\\rho g \Delta h$ adalah tekanan pengukur: jumlah dengan mana $P$ melebihi tekanan atmosfer $P_0$. Jika cairan di kolom sebelah kiri lebih rendah daripada di kolom sebelah kanan, $P$ kurang dari tekanan atmosfer (dan $\Delta h$ adalah negatif).')
         st.write('Alih-alih menghitung produk $\\rho g \Delta h$, terkadang hanya perubahan tinggi $\Delta h$ yang ditentukan. Sebenarnya, tekanan terkadang ditentukan sebagai sejumlah "milimeter merkuri" mm-Hg, jika $\\rho$ adalah untuk merkuri, atau "milimeter air" ($mm-H_2O$). Unit mm-Hg setara dengan tekanan 133 $N/m^2$, karena $\\rho g \Delta h$ untuk 1 mm (= $( 1.0$ x $10^{-3}$ m) merkuri memberikan')
@@ -229,9 +229,9 @@ def app():
         st.write('Unit mm-Hg juga disebut **torr** untuk menghormati ilmuwan Italia Evangelista Torricelli (1608-1647), seorang murid Galileo yang menemukan barometer (lihat Gambar 13911).')
         col_4, col_5, col_6 = st.columns(3)
         with col_5:
-            st.image('gambar/12.png', caption='Gambar 12. Merkuri barometer, yang ditemukan oleh Torricelli')
+            st.image('gambar/12.png', caption='Gambar 12. Merkuri barometer, yang ditemukan oleh Torricelli. (Giancoli, D. (2020)')
         st.write('Faktor konversi antara berbagai unit tekanan diberikan dalam (Gambar 13). Penting bahwa hanya $N/m^2 = Pa$, unit SI yang benar, yang digunakan dalam perhitungan yang melibatkan kuantitas lain yang ditentukan dalam satuan SI.')
-        st.image('gambar/13.png', caption='Gambar 13. Faktor Konversi Antara Berbagai Satuan Tekanan')
+        st.image('gambar/13.png', caption='Gambar 13. Faktor Konversi Antara Berbagai Satuan Tekanan. (Giancoli, D. (2020)')
         st.write('Jenis lain dari alat ukur tekanan adalah **alat ukur aneroid** (Gambar 11b) di mana penunjuk terhubung ke ujung-ujung fleksibel dari sebuah ruang logam tipis yang dievakuasi. Pada alat ukur elektronik, tekanan mungkin diterapkan pada diafragma logam tipis yang deformasinya diterjemahkan menjadi sinyal listrik oleh transduser. Alat ukur tekanan ban umum menggunakan pegas, seperti yang ditunjukkan dalam (Gambar 11c).')
         st.write('Tekanan atmosfer dapat diukur dengan jenis manometer merkuri yang dimodifikasi dengan satu ujung tertutup, disebut barometer merkuri (Gambar 12). Tabung kaca sepenuhnya diisi dengan merkuri dan kemudian dibalikkan ke dalam mangkuk merkuri. Jika tabung cukup panjang, tingkat merkuri akan turun, meninggalkan ruang hampa udara di bagian atas tabung, karena tekanan atmosfer hanya dapat menopang kolom merkuri sekitar 76 cm tingginya (tepatnya 76,0 cm pada tekanan atmosfer standar). Dengan kata lain, sebuah kolom merkuri setinggi 76 cm menimbulkan tekanan yang sama dengan atmosfer:')
         st.latex(r'P = \rho g \Delta h')
@@ -240,7 +240,7 @@ def app():
         st.write('Barometer rumah tangga biasanya adalah tipe aneroid (Gambar 11b), baik mekanik (dengan dial) maupun elektronik.')
         col_7, col_8, col_9 = st.columns(3)
         with col_8:
-            st.image('gambar/14.png', caption='Gambar 14. Sebuah Barometer air')
+            st.image('gambar/14.png', caption='Gambar 14. Sebuah Barometer air. (Giancoli, D. (2020)')
         st.write('Perhitungan serupa dengan yang baru saja dilakukan untuk Hg akan menunjukkan bahwa tekanan atmosfer dapat menjaga kolom air setinggi 10,3 m dalam tabung yang bagian atasnya berada di bawah vakum (Gambar 14) pada gambar tersebut sebuah tabung penuh air (lebih panjang dari 10 m), tertutup di bagian atasnya, dimasukkan ke dalam sebuah bak air. Ketika ujung bawah tabung yang terendam di dalam air dilepaskan, sebagian air mengalir keluar dari tabung ke dalam bak, meninggalkan vakum di bagian atas tabung di atas permukaan air. Mengapa? Karena tekanan udara hanya dapat menopang kolom air setinggi 10 m. Tidak peduli seberapa baik pompa vakum tersebut, air tidak dapat dipaksa naik lebih dari 10,3 m di bawah tekanan atmosfer normal. Untuk memompa air keluar dari sumur tambang yang dalam dengan pompa vakum memerlukan beberapa tahap untuk kedalaman lebih dari 10 m. Galileo mempelajari masalah ini, dan muridnya Torricelli adalah yang pertama menjelaskannya. Intinya adalah bahwa sebuah pompa sebenarnya tidak mengisap air naik ke dalam tabung: ia hanya mengurangi tekanan di bagian atas tabung. Tekanan udara atmosfer mendorong air naik ke dalam tabung jika ujung atasnya berada di tekanan lebih rendah (di bawah vakum), sama seperti tekanan udara yang mendorong (atau menjaga) merkuri setinggi 76 cm dalam barometer. [Pompa gaya, Bagian 1.3, dapat mendorong lebih tinggi.]')
         with st.expander("📚**Latihan Soal**", expanded=False):
             st.write('***SOAL 8***: **Penyedotan**. Seorang insinyur pemula mengusulkan sepatu dengan cangkir penarik untuk astronot pesawat ulang-alik yang bekerja di luar pesawat antariksa. Setelah baru saja mempelajari bab ini, Anda dengan lembut mengingatkannya akan kesalahan dalam rencana ini. Apa kesalahannya?')
@@ -258,7 +258,7 @@ def app():
         st.write('Benda-benda yang terendam dalam fluida tampaknya memiliki berat yang lebih ringan daripada saat di luar fluida. Sebagai contoh, sebuah batu besar yang sulit diangkat dari tanah seringkali dapat dengan mudah diangkat dari dasar sungai. Ketika Anda mengangkat batu melalui permukaan air, tiba-tiba terasa jauh lebih berat. Banyak benda, seperti kayu, mengapung di permukaan air. Dua efek ini adalah contoh dari gaya apung. Dalam setiap contoh, gaya gravitasi beraksi ke bawah. Tetapi selain itu, gaya apung ke atas dihasilkan oleh cairan. Gaya apung pada ikan dan penyelam bawah air hampir persis menyeimbangkan gaya gravitasi ke bawah, dan memungkinkan mereka untuk "melayang" dalam keseimbangan.')
         col_10, col_11, col_12 = st.columns(3)
         with col_11:
-            st.image('gambar/15.png', caption='Gambar 15. Penentuan gaya apung.')
+            st.image('gambar/15.png', caption='Gambar 15. Penentuan gaya apung. (Giancoli, D. (2020)')
         st.write('Gaya apung terjadi karena tekanan dalam sebuah fluida meningkat dengan kedalaman. Dengan demikian, tekanan ke atas pada permukaan bawah suatu benda yang terendam lebih besar daripada tekanan ke bawah pada permukaan atasnya. Untuk melihat efek ini, pertimbangkan sebuah silinder dengan tinggi $∆h$ yang ujung atas dan bawahnya memiliki luas $A$ dan yang sepenuhnya terendam dalam fluida dengan kerapatan $\\rho_F$, seperti yang ditunjukkan dalam (Gambar 15). Fluida memberikan tekanan $P_1 = \\rho_F g h_1$ pada permukaan atas silinder (Persamaan 3-1). Gaya yang disebabkan oleh tekanan ini di atas silinder adalah $F_1 = P_1 A = \\rho_F g h_1 A$, dan mengarah ke bawah. Demikian pula, fluida memberikan gaya ke atas pada bagian bawah silinder yang sama dengan $F_2 = P_2 A = \\rho_F g h_2 A$. Gaya bersih pada silinder yang dihasilkan oleh tekanan fluida, yang merupakan **gaya apung $F_B$**, bertindak ke atas dan memiliki besaran')
         st.latex(r'F_{apung} = F_2 - F_1 = \rho_F g A (h_2 - h_1)')
         st.latex(r'F_{apung} = \rho_F g A \Delta h')
@@ -268,7 +268,7 @@ def app():
         st.write('Hasil ini berlaku tidak peduli bentuk objeknya. Penemuan ini dikreditkan kepada Archimedes (287 - 212 SM), dan disebut sebagai **prinsip Archimedes:**')
         st.info('Gaya apung pada suatu objek yang terendam dalam sebuah fluida sama dengan berat fluida yang tergeser oleh objek tersebut.')
         st.write('Dengan "fluida yang tergeser," kita maksud sebuah volume fluida yang sama dengan volume yang terendam dari objek (atau bagian objek yang terendam). Jika objek diletakkan di dalam gelas atau bak yang awalnya terisi penuh dengan air, air yang meluap di atas mewakili air yang digeser oleh objek.')
-        st.image('gambar/16.png', caption='Gambar 16. Hukum Archimedes.')
+        st.image('gambar/16.png', caption='Gambar 16. Hukum Archimedes. (Giancoli, D. (2020)')
         st.write("Kita dapat menurunkan prinsip Archimedes secara umum dengan argumen sederhana namun elegan. Objek berbentuk tidak teratur D yang ditunjukkan dalam (Gambar 16a) dipengaruhi oleh gaya gravitasi (beratnya, $mg$, ke bawah) dan gaya apung, $F_B$, ke atas. Kita ingin menentukan $F_B$. Untuk melakukannya, kita kemudian mempertimbangkan sebuah benda (D' dalam Gambar 16b), kali ini terbuat dari fluida itu sendiri, dengan bentuk dan ukuran yang sama dengan objek asli, dan terletak pada kedalaman yang sama. Anda mungkin berpikir tentang benda fluida ini seperti terpisah dari sisa fluida oleh membran imajiner. Gaya apung $F_B$ pada benda fluida ini akan sama persis dengan pada objek asli karena fluida sekitarnya, yang mengeksekusi $F_B$, berada dalam konfigurasi yang sama persis. Benda fluida $D′$ ini dalam keseimbangan (fluida secara keseluruhan diam). Oleh karena itu, $F_B = m'g$, di mana $m'g$ adalah berat benda fluida $D′$. Oleh karena itu, gaya apung $F_B$ sama dengan berat benda fluida yang volumenya sama dengan volume objek asli yang terendam, yang merupakan prinsip Archimedes.")
         st.write('Penemuan Archimedes dilakukan melalui eksperimen. Apa yang telah kita lakukan adalah menunjukkan bahwa prinsip Archimedes dapat dihasilkan dari hukum Newton.')
         with st.expander("📚**Latihan Soal**", expanded=False):
@@ -278,7 +278,7 @@ def app():
             st.write('***SOAL 10***: **Mengangkat patung yang tenggelam**. Sebuah patung kuno dengan massa $70$ kg terletak di dasar laut. Volume patung tersebut adalah $3.0$ x $10^4$ $cm^3$. Berapa besar gaya yang diperlukan untuk mengangkatnya (tanpa percepatan)?')
             col_13, col_14, col_15= st.columns(3)
             with col_14:
-                st.image('gambar/17.png', caption='Gambar 17. Gaya gaya yang dibutuhkan untuk mengangkat patung.', width=50, use_column_width='auto')
+                st.image('gambar/17.png', caption='Gambar 17. Gaya gaya yang dibutuhkan untuk mengangkat patung. (Giancoli, D. (2020)', width=50, use_column_width='auto')
             st.write('***PEMBAHASAN***: Gaya $F$ yang diperlukan untuk mengangkat patung sama dengan berat patung $mg$ dikurangi dengan gaya apung $F_{apung}$. (Gambar 17) adalah diagram gaya bebas.')
             st.write('Kita menerapkan hukum kedua Newton, $\sum{F} = ma = 0$, yang memberikan $F + F_{apung} - mg = 0$ atau')
             st.latex(r'F = mg - F_{apung}')
@@ -291,7 +291,7 @@ def app():
         st.write("Dikatakan bahwa Archimedes menemukan prinsipnya di bak mandi sambil memikirkan bagaimana dia bisa menentukan apakah mahkota baru raja itu murni emas atau palsu. Emas memiliki berat jenis 19.3, sedikit lebih tinggi daripada kebanyakan logam, tetapi penentuan berat jenis atau densitas tidak dapat dilakukan secara langsung karena, bahkan jika massa diketahui, volume objek yang berbentuk tidak teratur tidak mudah dihitung. Namun, jika objek tersebut ditimbang di udara $(= w)$ dan juga 'ditimbang' saat berada di bawah air $(= w')$, densitas dapat ditentukan menggunakan prinsip Archimedes, seperti yang ditunjukkan oleh Contoh berikut. Kuantitas $w'$ disebut berat tampak di dalam air, dan itulah yang ditunjukkan oleh sebuah timbangan pegas ketika objek tenggelam dalam air (lihat Gambar 18); $w'$ sama dengan berat sebenarnya $(w = mg)$ dikurangi gaya apung.")
         with st.expander("📚**Latihan Soal**", expanded=False):
             st.write('***SOAL 10***: **Archimedes.** Ketika sebuah mahkota dengan massa 14.7 kg tenggelam dalam air, sebuah timbangan yang akurat hanya menunjukkan 13.4 kg. Apakah mahkota tersebut terbuat dari emas?')
-            st.image('gambar/18.png', caption='Gambar 18. Ilustrasi keadaan mahkota.')
+            st.image('gambar/18.png', caption='Gambar 18. Ilustrasi keadaan mahkota. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Jika mahkota tersebut emas, maka densitas dan berat jenisnya harus sangat tinggi, $SG = 19.3$ (lihat Gambar 1). Kami menentukan berat jenis mahkota menggunakan prinsip Archimedes dan dua diagram gaya bebas yang ditunjukkan dalam (Gambar 18)')
             st.write("Berat tampak objek yang tenggelam (mahkota) adalah $w'$ (apa yang dibaca oleh timbangan dalam (Gambar 18b)), dan merupakan gaya menarik ke bawah pada kait timbangan. Menurut hukum ketiga Newton, $w'$ sama dengan gaya $F'_T$ yang ditimbulkan oleh timbangan pada mahkota dalam (Gambar 18b). Jumlah gaya pada mahkota saat diam adalah nol, sehingga $w'$ sama dengan berat sebenarnya $w= mg$ dikurangi gaya apung $F_{apung}$:")
             st.latex(r"w' = F'_T = w - F_{apung}")
@@ -307,7 +307,7 @@ def app():
             st.write('Ini sesuai dengan densitas 11.300 kg/m³. Mahkota tersebut bukan emas, tetapi tampaknya terbuat dari timbal (lihat Gambar 1).')
             st.write('---')
         st.write('Prinsip Archimedes berlaku sama baiknya untuk objek yang mengapung, seperti kayu. Secara umum, sebuah objek mengapung di atas fluida jika densitasnya $(\\rho_0)$ lebih rendah dari densitas fluida $(\\rho_F)$. Ini dengan mudah terlihat dari (Gambar 19a), di mana sebatang kayu yang tenggelam dengan massa $m_O$ akan mengalami gaya netto ke atas dan mengapung ke permukaan jika $F_B \geq m_o g$; yaitu, jika $\\rho_F V g \geq \\rho_o V g$ atau $\\rho_F \geq \\rho_o$. Pada keseimbangan: yaitu, saat mengapung: gaya apung pada sebuah objek memiliki magnitudo yang sama dengan berat objek. Sebagai contoh, sebuah balok kayu yang berat jenisnya adalah 0.60 dan volumenya adalah 2.0 m³ memiliki massa')
-        st.image('gambar/19.png', caption='Gambar 19. Ilustrasi balok kayu')
+        st.image('gambar/19.png', caption='Gambar 19. Ilustrasi balok kayu. (Giancoli, D. (2020)')
         st.write('Gambar (a) Balok kayu yang sepenuhnya tenggelam mengalami percepatan ke atas karena $F_B \geq m_O g$. Ia mencapai keseimbangan (b) ketika $\sum F = 0$, sehingga $F_B = m_o g = (1200 ) g$. Kemudian $1200$ $kg$, atau $1.2$ $m³$, air digeser.')
         st.latex(r'm_o = \rho_o V = (0.60 \text{ x } 10^3 \text{ } kg/m^3)(2.0 \text{ } m^3) = 1200 kg')
         st.write('Jika balok kayu sepenuhnya tenggelam, maka akan menggeser massa air sebesar')
@@ -316,7 +316,7 @@ def app():
         st.write('Secara umum, ketika sebuah objek mengapung, kita memiliki $F_{apung} = m_O g$, yang dapat kita tulis sebagai (lihat Gambar 20)')
         col_16, col_17, col_18= st.columns(3)
         with col_17:
-            st.image('gambar/20.png', caption='Gambar 20. Sebuah objek yang mengapung dalam keseimbangan.')
+            st.image('gambar/20.png', caption='Gambar 20. Sebuah objek yang mengapung dalam keseimbangan. (Giancoli, D. (2020)')
         st.latex(r'F_B = m_og')
         st.latex(r'P_FV_{displ} g = \rho_o V_o g')
         st.write('di mana $V_o$ adalah volume penuh objek dan $V_{displ}$ adalah volume fluida yang digesernya (volume yang tenggelam). Dengan demikian,')
@@ -326,7 +326,7 @@ def app():
             st.write('***SOAL 11***: **Kalibrasi Hidrometer**. Sebuah hidrometer adalah instrumen sederhana yang digunakan untuk mengukur berat jenis cairan dengan menunjukkan seberapa dalam instrumen tersebut tenggelam dalam cairan. Sebuah hidrometer tertentu (Gambar 21) terdiri dari tabung kaca, diberi bobot di bagian bawah, yang panjangnya 25,0 cm dan memiliki luas penampang 2,00 cm², serta memiliki massa 45,0 g. Seberapa jauh dari ujung bermassa tersebut tanda 1,000 harus ditempatkan?')
             col_19, col_20, col_21= st.columns(3)
             with col_20:
-                st.image('gambar/21.png', caption='Gambar 21. Ilustrasi hidrometer.')
+                st.image('gambar/21.png', caption='Gambar 21. Ilustrasi hidrometer. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Pendekatan Hidrometer akan mengapung di air jika densitasnya $\\rho$ kurang dari $\\rho_{H_2O} = 1.000$ $g/cm³$, densitas air. Fraksi hidrometer yang tenggelam $(\\frac{V_{displaced}}{V_{total}})$ sama dengan rasio densitas $\\frac{\\rho}{\\rho_{H_2O}}$. Hidrometer memiliki densitas keseluruhan:')
             st.latex(r'\rho = \frac{m}{V} = {45.0 \text{ g}}{(2.00 \text{ } cm^2)(25.0 \text{ cm})} = 0.900 \text{ }g/cm^3')
             st.write('Dengan demikian, ketika diletakkan di dalam air, ia akan mencapai keseimbangan ketika 0,900 dari volumenya terendam. Karena memiliki penampang lintang yang seragam, (0,900) (25,0 cm) = 22,5 cm dari panjangnya akan terendam. Spesifik gravitasi air didefinisikan sebagai 1,000, jadi tanda tersebut harus ditempatkan 22,5 cm dari ujung yang tertimbang.')
@@ -337,7 +337,7 @@ def app():
             st.write('***SOAL 12***: **Balon Helium**. Berapa volume $V$ helium yang diperlukan jika sebuah balon akan mengangkat beban seberat 180 kg (termasuk berat balon kosong)?')
             col_22, col_23, col_24= st.columns(3)
             with col_23:
-                st.image('gambar/22.png', caption='Gambar 22. Ilustrasi balon helium.')
+                st.image('gambar/22.png', caption='Gambar 22. Ilustrasi balon helium. (Giancoli, D. (2020)')
             st.write('***PEMBAHASAN***: Gaya apung pada balon helium, $F_B$, yang sama dengan berat udara yang tergantikan, setidaknya harus sama dengan berat helium ditambah dengan berat balon dan beban (Gambar 22), jika mereka akan melayang ke atas. (Gambar 1) memberikan kerapatan helium sebesar $0.179 kg/m³$. Solusinya adalah bahwa gaya apung harus memiliki nilai minimum sebesar')
             st.latex(r'F_B = (m_{He} + 180 \text{ kg})g')
             st.write('Persamaan ini dapat ditulis dalam hal kerapatan menggunakan prinsip Archimedes:')
