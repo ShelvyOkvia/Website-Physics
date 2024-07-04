@@ -525,7 +525,7 @@ def app():
         left7, cent7, last7 = st.columns(3)
         with cent7: 
             st.image('image/Picture28.png', caption='Gambar 10. Benda Terapung. (Sumber: https://mediaindonesia.com/humaniora/653072/hukum-archimedes)')
-        st.latex(r'\rho_b = \frac{V_{bf}}{V_b} \rho_f')
+        st.latex(r'\rho_b = \frac{V_{bf}}{V_b} \rho_f...............(8)')
         st.write('Keterangan:')
         st.write(r'$$\\rho_b = \text{Massa jenis benda} \,(kg/m^3)$$')
         st.write(r'$$V_{bf} = \text{Volume benda yang tercelup} \,(m^3)$$')
@@ -579,7 +579,7 @@ def app():
             st.image('image/Picture32.png', caption='Gambar 15. Gaya Kohesi. (Sumber: http://chemist-try.blogspot.com/2012/10/tegangan-permukaan_26.html)')
         st.write('Pada gambar diatas, titik A berada di permukaan, titik B berada di dalam fluida. Partikel yang berada di titik B mendapat gaya kohesi dari partikel-partikel lain di sekelilingnya sehingga resultan yang dihasilkan dari semua gaya kohesi ini nol. Sedangkan partikel yang berada di titik A tidak mendapat gaya kohesi dari partikel di atasnya sehingga resultan yang dihasilkan dari gaya-gaya kohesi berarah ke bawah. Tarikan pada permukaan fluida ini membentuk semacam kulit penutup yang tipis. Seekor nyamuk dapat berjalan di atas permukaan air karena berat nyamuk dapat diatasi oleh lapisan kulit tipis ini.')
         st.write('Tegangan permukaan didefinisikan sebagai perbandingan antara gaya tegangan permukaan dengan panjang permukaan dimana gaya itu bekerja.')
-        left12, cent12, last12 = st.columns(2)
+        left12, cent12, last12 = st.columns(3)
         with cent12:    
             st.image('image/Picture33.png', caption='Gambar 16. Gaya Tegangan Permukaan. (Sumber: https://repositori.kemdikbud.go.id/22209/1/XI_Fisika_KD-3.3-_Final.pdf)')
         st.write('Gaya tegangan permukaan yang dialami oleh kawat yang dicelupkan kedalam air sabun. Kawat yang lurus posisi horisontal (bawah), cenderung bergerak keatas karena pengaruh tarikan gaya permukaan air sabun. Larutan sabun mempunyai dua permukaan, sehingga gaya tegangan permukaan bekerja sepanjang $2L=d$, tegangan permukaan $(\gamma)$ didefinisikan sebagai perbandingan antara gaya tegangan permukaan $(F)$ dan panjang permukaan $(d)$ dimana gaya itu bekerja')
@@ -690,7 +690,7 @@ def app():
         st.write(r'$$\pi =\,22/7 \text{ atau } \,3,14$$')
         st.write(r'$$v = \text{Kecepatan gerak benda} \,(m/s)$$')
         st.write('Koefisien viskositas didefinisikan sebagai hambatan pada aliran cairan. Koefisien viskositas dapat ditentukan dengan menggunakan persamaan Poiseuille:')
-        st.latex(r'\eta = \frac{2r^2g}{9v} (\rho_b - \rho_f)...............(11)')
+        st.latex(r'\eta = \frac{2r^2g}{9v} (\rho_b - \rho_f)...............(12)')
         st.write('Keterangan:')
         st.write(r'$$\eta = \text{Koefesien viskositas} \,(Pa.s)$$')
         st.write(r'$$r = \text{Jari-jari bola} \,(m)$$')
