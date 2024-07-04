@@ -387,10 +387,9 @@ def app():
         st.header(':blue[1. TEKANAN]')
         st.write('Tekanan didefinisikan sebagai gaya yang bekerja tegak lurus pada suatu bidang dibagi dengan luas bidang itu. Dan secara matematis dirumuskan sebagai berikut:')
         left_co, cent_co,last_co = st.columns(3)
-        with last_co:
+        with cent_co:
             st.image('image/Picture1.png', caption='Gambar 2. Ilustrasi Tekanan. (Sumber: https://www.ruangguru.com/blog/tekanan-zat-padat)')
-        with left_co:
-            st.latex(r'P = \frac{F}{A}...............(1)')
+        st.latex(r'P = \frac{F}{A}...............(1)')
         st.write('Keterangan:')
         st.write(r'P = Tekanan (Pascal atau $N/m^2$)')
         st.write(r'F = Gaya (N)')
@@ -580,11 +579,10 @@ def app():
             st.image('image/Picture32.png', caption='Gambar 15. Gaya Kohesi. (Sumber: http://chemist-try.blogspot.com/2012/10/tegangan-permukaan_26.html)')
         st.write('Pada gambar diatas, titik A berada di permukaan, titik B berada di dalam fluida. Partikel yang berada di titik B mendapat gaya kohesi dari partikel-partikel lain di sekelilingnya sehingga resultan yang dihasilkan dari semua gaya kohesi ini nol. Sedangkan partikel yang berada di titik A tidak mendapat gaya kohesi dari partikel di atasnya sehingga resultan yang dihasilkan dari gaya-gaya kohesi berarah ke bawah. Tarikan pada permukaan fluida ini membentuk semacam kulit penutup yang tipis. Seekor nyamuk dapat berjalan di atas permukaan air karena berat nyamuk dapat diatasi oleh lapisan kulit tipis ini.')
         st.write('Tegangan permukaan didefinisikan sebagai perbandingan antara gaya tegangan permukaan dengan panjang permukaan dimana gaya itu bekerja.')
-        left12, last12 = st.columns(2)
-        with left12:
-            st.write('Gaya tegangan permukaan yang dialami oleh kawat yang dicelupkan kedalam air sabun. Kawat yang lurus posisi horisontal (bawah), cenderung bergerak keatas karena pengaruh tarikan gaya permukaan air sabun. Larutan sabun mempunyai dua permukaan, sehingga gaya tegangan permukaan bekerja sepanjang $2L=d$, tegangan permukaan $(\gamma)$ didefinisikan sebagai perbandingan antara gaya tegangan permukaan $(F)$ dan panjang permukaan $(d)$ dimana gaya itu bekerja')
-        with last12:    
+        left12, cent12, last12 = st.columns(2)
+        with cent12:    
             st.image('image/Picture33.png', caption='Gambar 16. Gaya Tegangan Permukaan. (Sumber: https://repositori.kemdikbud.go.id/22209/1/XI_Fisika_KD-3.3-_Final.pdf)')
+        st.write('Gaya tegangan permukaan yang dialami oleh kawat yang dicelupkan kedalam air sabun. Kawat yang lurus posisi horisontal (bawah), cenderung bergerak keatas karena pengaruh tarikan gaya permukaan air sabun. Larutan sabun mempunyai dua permukaan, sehingga gaya tegangan permukaan bekerja sepanjang $2L=d$, tegangan permukaan $(\gamma)$ didefinisikan sebagai perbandingan antara gaya tegangan permukaan $(F)$ dan panjang permukaan $(d)$ dimana gaya itu bekerja')
         st.write('Sehingga secara matematis, dapat dirumuskan sebagai berikut:')
         st.latex(r'\gamma = \frac{F}{d} =\frac{F}{2L}...............(9)')
         st.write('Keterangan:')
