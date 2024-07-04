@@ -53,6 +53,21 @@ right: 2rem;
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+# Fungsi untuk menyematkan CSS
+def add_css(css):
+    st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+
+# CSS untuk mengatur warna semua teks menjadi putih
+css = """
+body, .stText, .stMarkdown, .stCode, .stLatex, .stTabs, .stButton button, .stCaption {
+    color: white !important;
+}
+"""
+
+# Menambahkan CSS ke Streamlit
+add_css(css)
+
+
 class MultiApp:
 
     def __init__(self):
