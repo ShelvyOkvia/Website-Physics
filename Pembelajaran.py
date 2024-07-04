@@ -17,7 +17,7 @@ def app():
         #APAKAH FLUIDA ITU?
         st.title(':green[APAKAH FLUIDA ITU?]')
         st.write('Fluida adalah zat yang dapat mengalir dan mengubah bentuk sesuai wadahnya. Fluida meliputi gas dan cairan. Bedanya, cairan memiliki kohesi (gaya tarik antarmolekul) sehingga molekul-molekulnya berdekatan dan cenderung tetap bersama sedangkan gas tidak. Akibatnya, cairan mempertahankan volume yang sama saat mengalir. Misalnya, jika Anda menuangkan 500 mL air ke dalam panci, air tetap akan menempati volume 500 mL. Sebaliknya, untuk gas bayangkan Anda memiliki balon kecil yang sangat penuh dengan udara. Saat balon masih tertutup, udara di dalamnya terkompresi dalam ruang kecil. Ketika Anda melepaskan udara dari balon, udara akan keluar dan mengisi ruang yang lebih besar di sekitar Anda. Sama seperti itu, ketika Anda membuka katup pada tabung oksigen terkompresi, oksigen akan keluar dari ruang kecil (500 mL) dan mengembang untuk mengisi volume yang jauh lebih besar di sekitarnya.')
-        st.write('Fluida memainkan peran penting dalam banyak aspek kehidupan sehari-hari. Kita meminumnya, menghirupnya, berenang di dalamnya. Fluida bersirkulasi di seluruh tubuh kita dan mengendalikan cuaca. Oleh karena itu, memahami fluida sangat penting bagi kita. Kita akan mulai belajar mengenai fluida statis, studi tentang fluida yang diam dalam situasi kesetimbangan. Seperti situasi kesetimbangan lainnya, ini didasarkan pada hukum pertama dan ketiga Newton. Kita akan mengeksplorasi konsep-konsep kunci dari massa jenis, tekanan, dan daya apung. Meskipun begitu, kita hanya akan membahas permukaan dari topik yang luas dan menarik ini.')
+        st.write('Fluida memainkan peran penting dalam banyak aspek kehidupan sehari-hari. Kita meminumnya, menghirupnya, berenang di dalamnya. Fluida bersirkulasi di seluruh tubuh kita dan mengendalikan cuaca. Oleh karena itu, memahami fluida sangat penting bagi kita. Kita akan mulai belajar mengenai fluida statis, studi tentang fluida yang diam dalam situasi kesetimbangan. Seperti situasi kesetimbangan lainnya, ini didasarkan pada hukum pertama dan ketiga Newton. Kita akan mengeksplorasi konsep-konsep kunci dari massa jenis, tekanan, dan gaya apung. Meskipun begitu, kita hanya akan membahas permukaan dari topik yang luas dan menarik ini.')
         
         #1.1 MASSA JENIS
         st.title(':orange[1.1 MASSA JENIS]')
@@ -253,9 +253,9 @@ def app():
         st.markdown('###')
         st.write('---')
         
-        #1.6 DAYA APUNG; PRINSIP ARCHIMEDES
-        st.title(':orange[1.6 DAYA APUNG; PRINSIP ARCHIMEDES]')
-        st.write('Benda-benda yang terendam dalam fluida tampaknya memiliki berat yang lebih ringan daripada saat di luar fluida. Sebagai contoh, sebuah batu besar yang sulit diangkat dari tanah seringkali dapat dengan mudah diangkat dari dasar sungai. Ketika Anda mengangkat batu melalui permukaan air, tiba-tiba terasa jauh lebih berat. Banyak benda, seperti kayu, mengapung di permukaan air. Dua efek ini adalah contoh dari daya apung. Dalam setiap contoh, gaya gravitasi beraksi ke bawah. Tetapi selain itu, gaya apung ke atas dihasilkan oleh cairan. Gaya apung pada ikan dan penyelam bawah air hampir persis menyeimbangkan gaya gravitasi ke bawah, dan memungkinkan mereka untuk "melayang" dalam keseimbangan.')
+        #1.6 GAYA APUNG; PRINSIP ARCHIMEDES
+        st.title(':orange[1.6 GAYA APUNG; PRINSIP ARCHIMEDES]')
+        st.write('Benda-benda yang terendam dalam fluida tampaknya memiliki berat yang lebih ringan daripada saat di luar fluida. Sebagai contoh, sebuah batu besar yang sulit diangkat dari tanah seringkali dapat dengan mudah diangkat dari dasar sungai. Ketika Anda mengangkat batu melalui permukaan air, tiba-tiba terasa jauh lebih berat. Banyak benda, seperti kayu, mengapung di permukaan air. Dua efek ini adalah contoh dari gaya apung. Dalam setiap contoh, gaya gravitasi beraksi ke bawah. Tetapi selain itu, gaya apung ke atas dihasilkan oleh cairan. Gaya apung pada ikan dan penyelam bawah air hampir persis menyeimbangkan gaya gravitasi ke bawah, dan memungkinkan mereka untuk "melayang" dalam keseimbangan.')
         col_10, col_11, col_12 = st.columns(3)
         with col_11:
             st.image('gambar/15.png', caption='Gambar 15. Penentuan gaya apung.')
