@@ -2,10 +2,13 @@
 
 Welcome to the **Website-Physics** repository! This project represents an interactive and educational platform designed to make learning physics engaging and accessible for everyone. Whether you are a student, educator, or just a physics enthusiast, this website provides resources and tools to explore the fascinating world of physics.
 
+## 🔗 Website Fluida Statis
+(https://websitechatbotphysics.streamlit.app/)
+
 ## 🚀 Features
 
 - **Interactive Learning Tools**: Simulations, animations, and calculators to visualize complex physics concepts.
-- **Comprehensive Content**: Covers topics ranging from basic mechanics to modern physics.
+- **Comprehensive Content**: Covers topics ranging physics about Fluids.
 - **User-Friendly Interface**: Clean and intuitive design for seamless navigation.
 - **AI-Enhanced Chatbot**: Get your physics questions answered with an AI-based chatbot.
 - **Responsive Design**: Accessible on any device, from desktops to smartphones.
@@ -23,6 +26,7 @@ Welcome to the **Website-Physics** repository! This project represents an intera
 - **AI Integration**: Chatbot powered by [OpenAI API/Custom AI Model]
 - **Database**: SQLite/MySQL for storing user data and quiz results
 - **Version Control**: Git for collaborative development
+- **Hosting**: Streamlit
 
 ## 🎓 Learning Goals
 
